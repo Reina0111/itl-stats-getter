@@ -12,4 +12,7 @@ if you want to check multiple people at once you can use
 if you want to check single person stats you can use
 `ruby total_passes.rb [id|nick] [USER_ID|USER_NICK] STAT_TO_CHECK`
 
-currently "totalPasses" is the only available stat to check
+available STAT_TO_CHECK options:
+`totalPasses` shows total passes of all songs (if song was played 3 times it will be counted 3 times)
+`songsByLevel` shows number of songs passed on each difficulty level
+`songsByLevelTop` shows number of songs passed on each difficulty level from user's top 75

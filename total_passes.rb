@@ -2,7 +2,7 @@ require 'open-uri'
 require 'json'
 
 @auto = false
-@types = ["totalPasses", "songsByLevel"]
+@types = ["totalPasses", "songsByLevel", "songsByLevelTop"]
 
 # TODO poprawić łapanie argumentów
 def check_args(args)
@@ -52,7 +52,21 @@ def check_stats(user, type)
     when "totalPasses"
         songs = user["topScores"]
         sum = songs.sum { |song| song["totalPasses"].to_i }
-        puts "User: #{user["entrant"]["name"]} totalPasses: #{sum}"
+        puts "#{user["entrant"]["name"].to_s.rjust(10, " ")} - totalPasses: #{sum.to_s.rjust(3, " ")}"
+    when "songsByLevel"
+        user_songs = user["topScores"]
+        songs = user["charts"]
+        user_songs.map! { |u_song| songs.find { |song| song["hash"] == u_song["chartHash"] } }
+        grouped_levels = user_songs.group_by { |song| song["meter"] }
+        puts "Songs by level for user #{user["entrant"]["name"]}"
+        puts grouped_levels.sort.map { |k, v| "Level #{k.to_s.rjust(2, " ")}: #{v.count.to_s.rjust(3, " ")}" }
+    when "songsByLevelTop"
+        user_songs = user["topScores"].sort_by { |song| song["points"] }.reverse[0..74]
+        songs = user["charts"]
+        user_songs.map! { |u_song| songs.find { |song| song["hash"] == u_song["chartHash"] } }
+        grouped_levels = user_songs.group_by { |song| song["meter"] }
+        puts "Top 75 songs by level for user #{user["entrant"]["name"]}"
+        puts grouped_levels.sort.map { |k, v| "Level #{k.to_s.rjust(2, " ")}: #{v.count.to_s.rjust(3, " ")}" }
     end
 end
 
