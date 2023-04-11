@@ -1,0 +1,844 @@
+{"gs_id":935, "id":167, "name":"Maxx-Storm", "region":"United Kingdom"}
+{"gs_id":2643, "id":398, "name":"Chunka", "region":"Illinois"}
+{"gs_id":1062, "id":320, "name":"iamchris4life", "region":"California (North)"}
+{"gs_id":6284, "id":43, "name":"Twix", "region":"Florida"}
+{"gs_id":87476, "id":76, "name":"dimo", "region":"California (North)"}
+{"gs_id":4062, "id":51, "name":"Rynker", "region":"Illinois"}
+{"gs_id":133006, "id":12, "name":"Chance R.", "region":"Colorado"}
+{"gs_id":146716, "id":352, "name":"Mike Tyson", "region":"Pennsylvania"}
+{"gs_id":128047, "id":21, "name":"PhaseX minus the Pha", "region":"Virginia"}
+{"gs_id":4362, "id":6, "name":"VKIM", "region":"Georgia"}
+{"gs_id":147890, "id":42, "name":"cmmf", "region":"Florida"}
+{"gs_id":128535, "id":161, "name":"Ritz", "region":"California (South)"}
+{"gs_id":58407, "id":57, "name":"Pocho", "region":"Chile"}
+{"gs_id":35701, "id":29, "name":"lolipo", "region":"Illinois"}
+{"gs_id":62987, "id":34, "name":"Kevin Durant", "region":"Washington"}
+{"gs_id":173699, "id":48, "name":"erictran0", "region":"California (North)"}
+{"gs_id":8181, "id":622, "name":"baraka", "region":"Florida"}
+{"gs_id":7737, "id":187, "name":"DF.LemmingOnTheRun", "region":"Wisconsin"}
+{"gs_id":172977, "id":278, "name":"marqqq", "region":"Colorado"}
+{"gs_id":173047, "id":254, "name":"nvanleerdrums", "region":"Illinois"}
+{"gs_id":7843, "id":98, "name":"Kigha", "region":"Ohio"}
+{"gs_id":173301, "id":121, "name":"Chabala", "region":"Quebec"}
+{"gs_id":3610, "id":479, "name":"LEISHEN.", "region":"Unspecified"}
+{"gs_id":4306, "id":215, "name":"FLASHitude", "region":"California (North)"}
+{"gs_id":7385, "id":116, "name":"Xynn", "region":"Pennsylvania"}
+{"gs_id":6314, "id":101, "name":"Franksoua", "region":"Quebec"}
+{"gs_id":163585, "id":168, "name":"MegaSphere", "region":"United Kingdom"}
+{"gs_id":65671, "id":2, "name":"FuegoEstupido", "region":"Nebraska"}
+{"gs_id":128002, "id":124, "name":"MoistBruh", "region":"California (North)"}
+{"gs_id":173210, "id":270, "name":"SebaZzZz", "region":"Colombia"}
+{"gs_id":66352, "id":287, "name":"ChatITG", "region":"Ohio"}
+{"gs_id":175125, "id":109, "name":"mixmasta", "region":"Wisconsin"}
+{"gs_id":30618, "id":240, "name":"D4RK", "region":"Colombia"}
+{"gs_id":171721, "id":127, "name":"Higgy", "region":"Florida"}
+{"gs_id":165605, "id":317, "name":"Freis", "region":"Unspecified"}
+{"gs_id":4730, "id":366, "name":"Darkstar", "region":"Arkansas"}
+{"gs_id":6118, "id":632, "name":"Le Rekt", "region":"New York"}
+{"gs_id":66647, "id":183, "name":"Yani", "region":"Illinois"}
+{"gs_id":77690, "id":408, "name":"Griever", "region":"Japan"}
+{"gs_id":165733, "id":81, "name":"Squeens", "region":"California (North)"}
+{"gs_id":169204, "id":245, "name":"takatzu48", "region":"Chile"}
+{"gs_id":175234, "id":672, "name":"R3N3", "region":"Colombia"}
+{"gs_id":36049, "id":620, "name":"sudzi781", "region":"Tennessee"}
+{"gs_id":165796, "id":218, "name":"Caji123", "region":"Colombia"}
+{"gs_id":4989, "id":494, "name":"Jafar", "region":"California (North)"}
+{"gs_id":175167, "id":357, "name":"killuastep", "region":"California (North)"}
+{"gs_id":44806, "id":184, "name":"Dick Kickem", "region":"Texas"}
+{"gs_id":173215, "id":108, "name":"bogo", "region":"Pennsylvania"}
+{"gs_id":2600, "id":104, "name":"DRON", "region":"Massachusetts"}
+{"gs_id":173058, "id":17, "name":"Girth Brooks", "region":"Texas"}
+{"gs_id":147886, "id":125, "name":"Slowest", "region":"New Zealand"}
+{"gs_id":173296, "id":65, "name":"IcyCold", "region":"New Zealand"}
+{"gs_id":66784, "id":4, "name":"TommyDoesntMiss", "region":"Massachusetts"}
+{"gs_id":6289, "id":581, "name":"Adaridan", "region":"New Mexico"}
+{"gs_id":241, "id":308, "name":"Eleftheria", "region":"Illinois"}
+{"gs_id":5314, "id":94, "name":"MrMeatloaf", "region":"Michigan"}
+{"gs_id":143647, "id":303, "name":"gulu", "region":"Japan"}
+{"gs_id":66431, "id":175, "name":"Berserker", "region":"Colombia"}
+{"gs_id":132528, "id":23, "name":"palacebeast", "region":"Pennsylvania"}
+{"gs_id":66778, "id":135, "name":"Shpadoinkle", "region":"Sweden"}
+{"gs_id":5362, "id":112, "name":"Halogen-", "region":"Maryland"}
+{"gs_id":173145, "id":371, "name":"miklowcic", "region":"North Carolina"}
+{"gs_id":6261, "id":549, "name":"Shi0-X", "region":"Colombia"}
+{"gs_id":4021, "id":213, "name":"Highflyer", "region":"United Kingdom"}
+{"gs_id":3761, "id":156, "name":"BBLON", "region":"Unspecified"}
+{"gs_id":132471, "id":432, "name":"neyoru", "region":"Poland"}
+{"gs_id":37977, "id":217, "name":"Whiskey Pete", "region":"New York"}
+{"gs_id":6703, "id":948, "name":"Mekki", "region":"Finland"}
+{"gs_id":173267, "id":53, "name":"CERiNG", "region":"New Jersey"}
+{"gs_id":49444, "id":162, "name":"freyja", "region":"Wisconsin"}
+{"gs_id":175350, "id":674, "name":"ChickenTendies", "region":"Chile"}
+{"gs_id":7693, "id":399, "name":"El_Tarma", "region":"Colombia"}
+{"gs_id":173636, "id":70, "name":"ZSL", "region":"Unspecified"}
+{"gs_id":165743, "id":395, "name":"trescal", "region":"California (North)"}
+{"gs_id":82300, "id":556, "name":"itsjusowl", "region":"California (South)"}
+{"gs_id":77862, "id":28, "name":"JeffreyATW", "region":"California (North)"}
+{"gs_id":133806, "id":216, "name":"PUYO", "region":"Japan"}
+{"gs_id":50287, "id":1, "name":"teejusb", "region":"Pennsylvania"}
+{"gs_id":35405, "id":196, "name":"VERTEX KIO", "region":"Colombia"}
+{"gs_id":132280, "id":401, "name":"Fingy", "region":"Washington"}
+{"gs_id":173419, "id":319, "name":"Desklamp", "region":"California (North)"}
+{"gs_id":8349, "id":466, "name":"Janus5k", "region":"California (South)"}
+{"gs_id":66532, "id":207, "name":"Alex C. Rock", "region":"Colombia"}
+{"gs_id":127813, "id":36, "name":"RakkiiCB", "region":"California (South)"}
+{"gs_id":173043, "id":77, "name":"XjojoX99", "region":"Utah"}
+{"gs_id":173050, "id":193, "name":"EndymionCL", "region":"Chile"}
+{"gs_id":173409, "id":117, "name":"Furious_Dan", "region":"Ontario"}
+{"gs_id":61697, "id":33, "name":"Blizzrdball", "region":"Minnesota"}
+{"gs_id":4102, "id":762, "name":"Paranoia Boi", "region":"Virginia"}
+{"gs_id":165777, "id":304, "name":"Meatyguy", "region":"Arizona"}
+{"gs_id":163474, "id":256, "name":"babyzionov", "region":"New Zealand"}
+{"gs_id":3306, "id":139, "name":"ElPapaCosmico", "region":"Washington"}
+{"gs_id":1087, "id":102, "name":"CLINTBEASTWOOD", "region":"Nebraska"}
+{"gs_id":173305, "id":249, "name":"Maxximus", "region":"Colorado"}
+{"gs_id":174935, "id":140, "name":"reset_itg", "region":"California (North)"}
+{"gs_id":124751, "id":322, "name":"the penis monster ", "region":"New Jersey"}
+{"gs_id":66785, "id":89, "name":"Ralph Caffery", "region":"Louisiana"}
+{"gs_id":172893, "id":25, "name":"Smalls", "region":"New Jersey"}
+{"gs_id":128275, "id":260, "name":"CarterTheQ", "region":"Illinois"}
+{"gs_id":170950, "id":416, "name":"oknap", "region":"Chile"}
+{"gs_id":173788, "id":26, "name":"Maty Taneczne LTek EX Pro", "region":"California (North)"}
+{"gs_id":145128, "id":151, "name":"H8EVRYTHNG", "region":"Colorado"}
+{"gs_id":167704, "id":282, "name":"MegamanFknX", "region":"Puerto Rico"}
+{"gs_id":280, "id":363, "name":"Faker13", "region":"Texas"}
+{"gs_id":128698, "id":40, "name":"Exschwasion", "region":"California (North)"}
+{"gs_id":128704, "id":548, "name":"wrsw", "region":"Ontario"}
+{"gs_id":75542, "id":171, "name":"lucdar", "region":"California (North)"}
+{"gs_id":147676, "id":482, "name":"Eesa", "region":"Arizona"}
+{"gs_id":173137, "id":246, "name":"Floms", "region":"Philippines"}
+{"gs_id":173094, "id":263, "name":"Stretch D. Isazz", "region":"Illinois"}
+{"gs_id":127939, "id":896, "name":"in", "region":"Colorado"}
+{"gs_id":165524, "id":314, "name":"COLLETnm7", "region":"Japan"}
+{"gs_id":127797, "id":210, "name":"dancingmaractus", "region":"Connecticut"}
+{"gs_id":6069, "id":735, "name":"NBCrescendo", "region":"Finland"}
+{"gs_id":139333, "id":627, "name":"sumikk0", "region":"California (South)"}
+{"gs_id":982, "id":386, "name":"andy457", "region":"Virginia"}
+{"gs_id":7550, "id":814, "name":"mrCLICKman", "region":"California (North)"}
+{"gs_id":175374, "id":231, "name":"LordLui", "region":"Alabama"}
+{"gs_id":134219, "id":55, "name":"ZarinahBBM", "region":"Washington"}
+{"gs_id":129254, "id":190, "name":"ddrneel", "region":"Hawaii"}
+{"gs_id":66246, "id":3, "name":"Zankoku", "region":"California (North)"}
+{"gs_id":127827, "id":768, "name":"SPVLABS", "region":"Unspecified"}
+{"gs_id":1232, "id":384, "name":"mute", "region":"Wisconsin"}
+{"gs_id":66443, "id":90, "name":"limitin", "region":"Massachusetts"}
+{"gs_id":173007, "id":91, "name":"kodensa", "region":"California (South)"}
+{"gs_id":31959, "id":155, "name":"Dickey", "region":"California (South)"}
+{"gs_id":165532, "id":615, "name":"DdRDan", "region":"Colorado"}
+{"gs_id":66661, "id":225, "name":"jeshusha1", "region":"Chile"}
+{"gs_id":124527, "id":285, "name":"Silver Fox", "region":"Italy"}
+{"gs_id":66664, "id":699, "name":"ZoG-", "region":"Finland"}
+{"gs_id":173716, "id":68, "name":"Andeh", "region":"Texas"}
+{"gs_id":33573, "id":336, "name":"anisakis", "region":"Colombia"}
+{"gs_id":132162, "id":141, "name":"Arki", "region":"Poland"}
+{"gs_id":173334, "id":441, "name":"sidopolis", "region":"California (South)"}
+{"gs_id":128724, "id":180, "name":"LFK", "region":"Unspecified"}
+{"gs_id":128847, "id":619, "name":"LaplaceFox", "region":"Pennsylvania"}
+{"gs_id":173037, "id":247, "name":"Fanatik25", "region":"Idaho"}
+{"gs_id":66554, "id":367, "name":"Dr.0ctgonapus", "region":"Texas"}
+{"gs_id":174617, "id":85, "name":"ForkySpoon", "region":"California (North)"}
+{"gs_id":129655, "id":84, "name":"Hunter", "region":"Quebec"}
+{"gs_id":174758, "id":538, "name":"Miu", "region":"Colombia"}
+{"gs_id":62430, "id":115, "name":"ManeMan08", "region":"Ohio"}
+{"gs_id":36569, "id":338, "name":"sirex", "region":"Poland"}
+{"gs_id":50564, "id":267, "name":"Nate", "region":"New Jersey"}
+{"gs_id":163331, "id":24, "name":"Vivek Sharma", "region":"Pennsylvania"}
+{"gs_id":175422, "id":597, "name":"Pattmalka", "region":"Alabama"}
+{"gs_id":66587, "id":46, "name":"Lotarr", "region":"Georgia"}
+{"gs_id":165752, "id":365, "name":"Zui", "region":"Italy"}
+{"gs_id":173251, "id":37, "name":"sorae", "region":"Georgia"}
+{"gs_id":173228, "id":356, "name":"warriorddr", "region":"Colombia"}
+{"gs_id":165504, "id":52, "name":"_Temeraire", "region":"Illinois"}
+{"gs_id":130786, "id":226, "name":"nuki", "region":"Alabama"}
+{"gs_id":129083, "id":433, "name":"Cyx", "region":"Ontario"}
+{"gs_id":173322, "id":186, "name":"CK89REY", "region":"Colombia"}
+{"gs_id":173653, "id":114, "name":"valgrind", "region":"Pennsylvania"}
+{"gs_id":75801, "id":651, "name":"aryla", "region":"Finland"}
+{"gs_id":62, "id":427, "name":"JJK", "region":"California (South)"}
+{"gs_id":66627, "id":146, "name":"Stardust", "region":"Pennsylvania"}
+{"gs_id":256, "id":185, "name":"DanPeriod", "region":"New Jersey"}
+{"gs_id":173125, "id":280, "name":"Lux Aurumque", "region":"Texas"}
+{"gs_id":173223, "id":272, "name":"Koso", "region":"Colombia"}
+{"gs_id":148381, "id":507, "name":"kidcrab", "region":"Ohio"}
+{"gs_id":4819, "id":113, "name":"Renbrandt", "region":"Finland"}
+{"gs_id":175389, "id":368, "name":"patj", "region":"Connecticut"}
+{"gs_id":165856, "id":686, "name":"housesan", "region":"California (North)"}
+{"gs_id":112184, "id":428, "name":"tim", "region":"Ohio"}
+{"gs_id":4946, "id":276, "name":"Lisek", "region":"Poland"}
+{"gs_id":174632, "id":16, "name":"SunkissEnjoyer", "region":"California (North)"}
+{"gs_id":175276, "id":95, "name":"teekmn", "region":"Minnesota"}
+{"gs_id":66703, "id":345, "name":"Alhe", "region":"Finland"}
+{"gs_id":4681, "id":806, "name":"squatz.zexyu", "region":"California (North)"}
+{"gs_id":2114, "id":238, "name":"Beremy", "region":"Illinois"}
+{"gs_id":4940, "id":579, "name":"hippotz", "region":"Minnesota"}
+{"gs_id":175365, "id":147, "name":"midtown", "region":"Indiana"}
+{"gs_id":165653, "id":152, "name":"dekw", "region":"Ontario"}
+{"gs_id":175403, "id":458, "name":"Breebs", "region":"Michigan"}
+{"gs_id":145083, "id":145, "name":"LOLWUT", "region":"California (North)"}
+{"gs_id":173589, "id":377, "name":"bader", "region":"Pennsylvania"}
+{"gs_id":165884, "id":237, "name":"Aldarole", "region":"New Jersey"}
+{"gs_id":175413, "id":547, "name":"PQQP", "region":"Texas"}
+{"gs_id":134773, "id":170, "name":"dlim", "region":"California (South)"}
+{"gs_id":66726, "id":228, "name":"Zeipher_Hawk", "region":"New Jersey"}
+{"gs_id":76562, "id":73, "name":"robin_", "region":"Illinois"}
+{"gs_id":175363, "id":142, "name":"Idontevenknowyou!", "region":"Georgia"}
+{"gs_id":173118, "id":97, "name":"HellKiteChaos", "region":"North Carolina"}
+{"gs_id":175378, "id":253, "name":"Fursty1896", "region":"Illinois"}
+{"gs_id":173355, "id":262, "name":"wolfxalienware", "region":"Mexico"}
+{"gs_id":2380, "id":144, "name":"PinkDad", "region":"Oregon"}
+{"gs_id":165916, "id":130, "name":"AMintyDragon", "region":"Unspecified"}
+{"gs_id":66662, "id":80, "name":"itgaz", "region":"United Kingdom"}
+{"gs_id":149573, "id":1005, "name":"Vixel", "region":"Washington"}
+{"gs_id":66753, "id":340, "name":"PkGam", "region":"Wisconsin"}
+{"gs_id":142757, "id":274, "name":"Rudeshadow", "region":"California (South)"}
+{"gs_id":169031, "id":644, "name":"!El_semicorcheas!", "region":"Colombia"}
+{"gs_id":163426, "id":41, "name":"GWen", "region":"Washington"}
+{"gs_id":80039, "id":491, "name":"Zaelyx", "region":"Ohio"}
+{"gs_id":173175, "id":982, "name":"Fireblaster", "region":"Connecticut"}
+{"gs_id":175355, "id":45, "name":"RootReducer", "region":"Washington"}
+{"gs_id":128840, "id":603, "name":"Jhennyinthecup ", "region":"Florida"}
+{"gs_id":3983, "id":598, "name":"BigYama", "region":"California (South)"}
+{"gs_id":128363, "id":18, "name":"Kerpa", "region":"Missouri"}
+{"gs_id":170806, "id":455, "name":"Yokamaa", "region":"Nevada"}
+{"gs_id":131910, "id":297, "name":"slime", "region":"Alabama"}
+{"gs_id":175227, "id":100, "name":"yoonjelly", "region":"Massachusetts"}
+{"gs_id":134767, "id":347, "name":"NaoHikari", "region":"North Carolina"}
+{"gs_id":175418, "id":577, "name":"LaReinaDelSur", "region":"Florida"}
+{"gs_id":154965, "id":27, "name":"Gpop", "region":"Ontario"}
+{"gs_id":133783, "id":259, "name":"Viper", "region":"Italy"}
+{"gs_id":6791, "id":513, "name":"Catz", "region":"France"}
+{"gs_id":134350, "id":719, "name":"kaosddr", "region":"North Carolina"}
+{"gs_id":165835, "id":312, "name":"callmisoko", "region":"Colorado"}
+{"gs_id":172973, "id":174, "name":"inglomi", "region":"Texas"}
+{"gs_id":128893, "id":392, "name":"Quesadilla", "region":"Oregon"}
+{"gs_id":193, "id":994, "name":"rogerclark", "region":"Unspecified"}
+{"gs_id":174904, "id":235, "name":"Choden", "region":"New Zealand"}
+{"gs_id":1777, "id":465, "name":"the government knows", "region":"New Jersey"}
+{"gs_id":66666, "id":612, "name":"gatodeplastico", "region":"Chile"}
+{"gs_id":173369, "id":120, "name":"LuckJury", "region":"Texas"}
+{"gs_id":145105, "id":353, "name":"trueblue410", "region":"Colorado"}
+{"gs_id":174707, "id":78, "name":"antifun", "region":"Florida"}
+{"gs_id":173384, "id":5, "name":"Hiten", "region":"California (North)"}
+{"gs_id":168067, "id":105, "name":"BreakfastPM", "region":"Ohio"}
+{"gs_id":175415, "id":554, "name":"ODengals", "region":"Illinois"}
+{"gs_id":175171, "id":205, "name":"SenPi", "region":"Manitoba"}
+{"gs_id":136928, "id":83, "name":"Daikyi", "region":"Virginia"}
+{"gs_id":173196, "id":929, "name":"MIKO491", "region":"Illinois"}
+{"gs_id":66720, "id":269, "name":"Dotso", "region":"Illinois"}
+{"gs_id":66558, "id":173, "name":"xiaowuc1", "region":"California (North)"}
+{"gs_id":77437, "id":785, "name":"hk", "region":"Finland"}
+{"gs_id":7858, "id":344, "name":"HegemonMithos", "region":"Ohio"}
+{"gs_id":66545, "id":671, "name":"skateinmars", "region":"France"}
+{"gs_id":134656, "id":697, "name":"NDGO", "region":"Ohio"}
+{"gs_id":127780, "id":169, "name":"Hamaon", "region":"Michigan"}
+{"gs_id":173124, "id":714, "name":"Frantalicious", "region":"Minnesota"}
+{"gs_id":173722, "id":530, "name":"Jennergy", "region":"Nevada"}
+{"gs_id":172864, "id":991, "name":"1Aryan", "region":"Poland"}
+{"gs_id":172941, "id":241, "name":"Fuck This", "region":"Massachusetts"}
+{"gs_id":160185, "id":214, "name":"Nichard", "region":"New Jersey"}
+{"gs_id":8482, "id":472, "name":"ddrulox", "region":"Chile"}
+{"gs_id":173142, "id":355, "name":"Yung ButtCoin", "region":"Alabama"}
+{"gs_id":3778, "id":382, "name":"Andisheh", "region":"California (North)"}
+{"gs_id":173333, "id":453, "name":"pasgetti", "region":"California (South)"}
+{"gs_id":173603, "id":397, "name":"Stru", "region":"Texas"}
+{"gs_id":165841, "id":107, "name":"mangoafterdawn", "region":"California (South)"}
+{"gs_id":173351, "id":688, "name":"Hamlette", "region":"California (South)"}
+{"gs_id":175005, "id":160, "name":"Ricky", "region":"California (North)"}
+{"gs_id":5589, "id":405, "name":"djMHT", "region":"Michigan"}
+{"gs_id":128890, "id":54, "name":"Coneja", "region":"Chile"}
+{"gs_id":175479, "id":732, "name":"ranatalus", "region":"Ohio"}
+{"gs_id":173876, "id":126, "name":"sigonasr2", "region":"Arizona"}
+{"gs_id":2026, "id":302, "name":"BarX", "region":"Australia"}
+{"gs_id":173291, "id":258, "name":"Daz4", "region":"Colombia"}
+{"gs_id":130553, "id":350, "name":"NinjaNabi", "region":"New Jersey"}
+{"gs_id":173461, "id":288, "name":"Treklock", "region":"Quebec"}
+{"gs_id":75846, "id":279, "name":"Rarily", "region":"New Jersey"}
+{"gs_id":173320, "id":60, "name":"L4viR", "region":"Brazil"}
+{"gs_id":173554, "id":523, "name":"SailorMoonElite", "region":"Florida"}
+{"gs_id":172971, "id":607, "name":"Ravelan", "region":"Poland"}
+{"gs_id":173420, "id":9, "name":"slowunsteady", "region":"Unspecified"}
+{"gs_id":173366, "id":542, "name":"Popplio", "region":"Pennsylvania"}
+{"gs_id":75805, "id":134, "name":"Accioskullar", "region":"Puerto Rico"}
+{"gs_id":175218, "id":321, "name":"Zivie87", "region":"California (North)"}
+{"gs_id":173064, "id":585, "name":"bobayubi", "region":"Oregon"}
+{"gs_id":173571, "id":590, "name":"KyokiShinsa", "region":"California (South)"}
+{"gs_id":173312, "id":922, "name":"drillbot", "region":"Ohio"}
+{"gs_id":173350, "id":409, "name":"Dayani", "region":"California (South)"}
+{"gs_id":23, "id":396, "name":"ninjafetus", "region":"Florida"}
+{"gs_id":37863, "id":223, "name":"TaroNuke", "region":"United Kingdom"}
+{"gs_id":134389, "id":202, "name":"angelXboy", "region":"California (North)"}
+{"gs_id":127988, "id":424, "name":"DJNidra", "region":"Massachusetts"}
+{"gs_id":175453, "id":685, "name":"Another48", "region":"Chile"}
+{"gs_id":81056, "id":480, "name":"Twans", "region":"Illinois"}
+{"gs_id":173559, "id":407, "name":"Beta", "region":"United Kingdom"}
+{"gs_id":118191, "id":515, "name":"Zeo", "region":"California (North)"}
+{"gs_id":132111, "id":138, "name":"Axor", "region":"Poland"}
+{"gs_id":34196, "id":50, "name":"Telperion", "region":"New York"}
+{"gs_id":173375, "id":521, "name":"luna2108", "region":"Mexico"}
+{"gs_id":132032, "id":99, "name":"tommoda", "region":"United Kingdom"}
+{"gs_id":173445, "id":563, "name":"jiajiabinks", "region":"Ohio"}
+{"gs_id":172958, "id":574, "name":"Kosem", "region":"Colombia"}
+{"gs_id":173373, "id":189, "name":"Shmeagle!", "region":"Massachusetts"}
+{"gs_id":175292, "id":461, "name":"Thotful", "region":"California (North)"}
+{"gs_id":175397, "id":423, "name":"pani", "region":"Chile"}
+{"gs_id":173391, "id":636, "name":"CompleteYoshi", "region":"Mexico"}
+{"gs_id":173423, "id":462, "name":"Lilo Landa", "region":"Colombia"}
+{"gs_id":7632, "id":381, "name":"freddy15204", "region":"Florida"}
+{"gs_id":1932, "id":323, "name":"flip", "region":"California (South)"}
+{"gs_id":471, "id":976, "name":"kay0ss", "region":"California (North)"}
+{"gs_id":173336, "id":379, "name":"stevesef", "region":"Delaware"}
+{"gs_id":173315, "id":351, "name":"vintogigue", "region":"Maryland"}
+{"gs_id":166764, "id":222, "name":"kadef", "region":"Maryland"}
+{"gs_id":173104, "id":505, "name":"TaymanND", "region":"Manitoba"}
+{"gs_id":173068, "id":123, "name":"Gyzarus", "region":"Oklahoma"}
+{"gs_id":72041, "id":457, "name":"DerpyPengu", "region":"New York"}
+{"gs_id":173335, "id":541, "name":"VvITL", "region":"Pennsylvania"}
+{"gs_id":77372, "id":639, "name":"aeubanks", "region":"California (North)"}
+{"gs_id":174280, "id":559, "name":"Falty No Bar", "region":"California (North)"}
+{"gs_id":175377, "id":243, "name":"Datwood", "region":"New York"}
+{"gs_id":174010, "id":61, "name":"zibson", "region":"Poland"}
+{"gs_id":173119, "id":718, "name":"chrome farts", "region":"California (South)"}
+{"gs_id":174191, "id":677, "name":"Dautri", "region":"Massachusetts"}
+{"gs_id":175166, "id":758, "name":"Sydia", "region":"Ohio"}
+{"gs_id":76052, "id":38, "name":"MrTwinkles", "region":"Pennsylvania"}
+{"gs_id":175568, "id":886, "name":"Chris Benoit", "region":"Florida"}
+{"gs_id":1981, "id":659, "name":"GospelEXE", "region":"Massachusetts"}
+{"gs_id":66553, "id":573, "name":"Aura", "region":"Texas"}
+{"gs_id":175512, "id":827, "name":"X!!", "region":"Georgia"}
+{"gs_id":173300, "id":273, "name":"Tetaes", "region":"Japan"}
+{"gs_id":175388, "id":362, "name":"Landius", "region":"New Mexico"}
+{"gs_id":175368, "id":248, "name":"KINDLADY", "region":"New York"}
+{"gs_id":175417, "id":568, "name":"sexymustard", "region":"Ohio"}
+{"gs_id":162522, "id":855, "name":"XFN", "region":"Indiana"}
+{"gs_id":6555, "id":519, "name":"werdwerdus", "region":"Iowa"}
+{"gs_id":135314, "id":415, "name":"Gumbygum", "region":"Colorado"}
+{"gs_id":173476, "id":177, "name":"Hewhoamareismyself", "region":"Massachusetts"}
+{"gs_id":173053, "id":69, "name":"andr", "region":"Poland"}
+{"gs_id":173317, "id":380, "name":"CopperPuppy", "region":"Unspecified"}
+{"gs_id":175051, "id":499, "name":"psyquo", "region":"Philippines"}
+{"gs_id":173356, "id":30, "name":"NOWHERE Dance Club", "region":"Maine"}
+{"gs_id":175283, "id":456, "name":"ArrowsmithWordWizardBA3", "region":"New Jersey"}
+{"gs_id":173285, "id":257, "name":"pogjamie", "region":"Illinois"}
+{"gs_id":165750, "id":62, "name":"Sex", "region":"Unspecified"}
+{"gs_id":173438, "id":224, "name":"nauebp", "region":"Unspecified"}
+{"gs_id":173825, "id":481, "name":"xxzeniusxx", "region":"Texas"}
+{"gs_id":66226, "id":537, "name":"C-lynn", "region":"France"}
+{"gs_id":175075, "id":878, "name":"BigKnees", "region":"Indiana"}
+{"gs_id":118539, "id":15, "name":"fastboy", "region":"California (South)"}
+{"gs_id":173415, "id":689, "name":"Moosey", "region":"Utah"}
+{"gs_id":3090, "id":525, "name":"HF230", "region":"North Carolina"}
+{"gs_id":42011, "id":157, "name":"Zlew", "region":"Poland"}
+{"gs_id":173430, "id":963, "name":"ahchurro111", "region":"California (South)"}
+{"gs_id":129553, "id":470, "name":"Navi02U", "region":"Unspecified"}
+{"gs_id":173035, "id":327, "name":"Jkurs", "region":"Tennessee"}
+{"gs_id":172954, "id":857, "name":"copas", "region":"Colombia"}
+{"gs_id":173817, "id":657, "name":"Hasse", "region":"Finland"}
+{"gs_id":66304, "id":136, "name":"ATB", "region":"Illinois"}
+{"gs_id":163899, "id":149, "name":"Tidek", "region":"Poland"}
+{"gs_id":167276, "id":502, "name":"Ayaka", "region":"United Kingdom"}
+{"gs_id":175395, "id":403, "name":"bap", "region":"New York"}
+{"gs_id":175154, "id":211, "name":"Sonja", "region":"Colombia"}
+{"gs_id":174860, "id":209, "name":"Adamskull", "region":"Massachusetts"}
+{"gs_id":76988, "id":86, "name":"1ug1a", "region":"California (South)"}
+{"gs_id":173184, "id":11, "name":"Maybell Eigenhart", "region":"Netherlands"}
+{"gs_id":173411, "id":582, "name":"ladymolii", "region":"Colombia"}
+{"gs_id":134541, "id":159, "name":"DJPandaga", "region":"Texas"}
+{"gs_id":170859, "id":1048, "name":"ruunix2", "region":"Texas"}
+{"gs_id":4887, "id":695, "name":"JayNeko", "region":"Florida"}
+{"gs_id":173453, "id":96, "name":"Kikoia", "region":"New York"}
+{"gs_id":66376, "id":439, "name":"Boingloing", "region":"Pennsylvania"}
+{"gs_id":78677, "id":868, "name":"plasmaaa", "region":"Wisconsin"}
+{"gs_id":173077, "id":425, "name":"STARLONG", "region":"Texas"}
+{"gs_id":175525, "id":808, "name":"Ohbi", "region":"Colombia"}
+{"gs_id":66487, "id":694, "name":"dominick.dechristofaro", "region":"Georgia"}
+{"gs_id":173546, "id":22, "name":"Piols", "region":"Poland"}
+{"gs_id":172895, "id":49, "name":"sekiirei", "region":"Minnesota"}
+{"gs_id":175356, "id":394, "name":"SnowStorm", "region":"Louisiana"}
+{"gs_id":174909, "id":901, "name":"olc", "region":"Florida"}
+{"gs_id":173150, "id":313, "name":"sage of flowers", "region":"Wisconsin"}
+{"gs_id":175032, "id":526, "name":"Siren", "region":"California (North)"}
+{"gs_id":73458, "id":593, "name":"Cozy", "region":"Massachusetts"}
+{"gs_id":1138, "id":650, "name":"RawkusX", "region":"Texas"}
+{"gs_id":173474, "id":219, "name":"Wenn", "region":"Colombia"}
+{"gs_id":4391, "id":751, "name":"Rilakkumaboy", "region":"Quebec"}
+{"gs_id":175572, "id":887, "name":"rkataoka", "region":"Brazil"}
+{"gs_id":40013, "id":524, "name":"takumiAE86", "region":"Colombia"}
+{"gs_id":173260, "id":536, "name":"Peabody!", "region":"New York"}
+{"gs_id":66295, "id":766, "name":"Liam", "region":"New York"}
+{"gs_id":175406, "id":483, "name":"HeavyModeYT", "region":"Michigan"}
+{"gs_id":175430, "id":621, "name":"N_pronounceable", "region":"Quebec"}
+{"gs_id":173240, "id":572, "name":"xdank", "region":"Virginia"}
+{"gs_id":168699, "id":990, "name":"lizzzzzy", "region":"Peru"}
+{"gs_id":174818, "id":450, "name":"eedeeq", "region":"California (South)"}
+{"gs_id":75645, "id":331, "name":"byron", "region":"Australia"}
+{"gs_id":173943, "id":843, "name":"YUE-COL", "region":"Colombia"}
+{"gs_id":173651, "id":59, "name":"Zydra", "region":"Unspecified"}
+{"gs_id":173502, "id":131, "name":"Salsa", "region":"Texas"}
+{"gs_id":163400, "id":722, "name":"t3a", "region":"California (North)"}
+{"gs_id":173321, "id":328, "name":"Peli", "region":"Australia"}
+{"gs_id":173363, "id":829, "name":"RuanTheDonPianta", "region":"New York"}
+{"gs_id":175268, "id":419, "name":"Litter*", "region":"Minnesota"}
+{"gs_id":173313, "id":387, "name":"MarsBMC", "region":"Utah"}
+{"gs_id":173422, "id":862, "name":"Sonny", "region":"California (North)"}
+{"gs_id":173358, "id":503, "name":"pumpuli", "region":"Finland"}
+{"gs_id":175285, "id":463, "name":"hitswi", "region":"California (North)"}
+{"gs_id":4290, "id":158, "name":"ROBIJO", "region":"Sweden"}
+{"gs_id":135061, "id":148, "name":"airplane", "region":"California (South)"}
+{"gs_id":78689, "id":517, "name":"Darkuo ", "region":"California (North)"}
+{"gs_id":173195, "id":198, "name":"Atehortua", "region":"Massachusetts"}
+{"gs_id":173612, "id":630, "name":"speny", "region":"Alabama"}
+{"gs_id":173144, "id":675, "name":"gonekim116", "region":"Illinois"}
+{"gs_id":173521, "id":421, "name":"Mallow", "region":"Unspecified"}
+{"gs_id":173105, "id":150, "name":"TheManwich", "region":"Minnesota"}
+{"gs_id":170939, "id":182, "name":"Cephiros", "region":"Oregon"}
+{"gs_id":175367, "id":179, "name":"Rufus", "region":"Utah"}
+{"gs_id":174967, "id":230, "name":"Lumen", "region":"California (North)"}
+{"gs_id":84583, "id":233, "name":"Lugea", "region":"Uruguay"}
+{"gs_id":174975, "id":364, "name":"Painsley", "region":"New Jersey"}
+{"gs_id":173067, "id":599, "name":"Pink Dino", "region":"New Mexico"}
+{"gs_id":172919, "id":915, "name":"yocto", "region":"Arkansas"}
+{"gs_id":175501, "id":772, "name":"DisGuy", "region":"California (North)"}
+{"gs_id":66699, "id":390, "name":"xopher", "region":"Arkansas"}
+{"gs_id":175382, "id":306, "name":"UPI", "region":"Chile"}
+{"gs_id":173319, "id":330, "name":"D0omsday", "region":"Nevada"}
+{"gs_id":66362, "id":496, "name":"centripital", "region":"Texas"}
+{"gs_id":165906, "id":67, "name":"joshhead", "region":"Michigan"}
+{"gs_id":173013, "id":693, "name":"J13Rstyle", "region":"Colombia"}
+{"gs_id":155296, "id":575, "name":"lafv54", "region":"Colombia"}
+{"gs_id":175400, "id":434, "name":"formi no bar", "region":"Germany"}
+{"gs_id":175411, "id":544, "name":"Azelas", "region":"Massachusetts"}
+{"gs_id":173179, "id":712, "name":"Frondal", "region":"Colombia"}
+{"gs_id":175373, "id":208, "name":"Kasemei", "region":"Illinois"}
+{"gs_id":173428, "id":596, "name":"Beniplex", "region":"United Kingdom"}
+{"gs_id":173207, "id":617, "name":"Kyroke", "region":"Mexico"}
+{"gs_id":75719, "id":658, "name":"hegza", "region":"Finland"}
+{"gs_id":165792, "id":509, "name":"Fierra", "region":"United Kingdom"}
+{"gs_id":175369, "id":467, "name":"JAFUS", "region":"Quebec"}
+{"gs_id":66732, "id":543, "name":"Cxxxx", "region":"Washington"}
+{"gs_id":354, "id":111, "name":"Mau", "region":"California (South)"}
+{"gs_id":52996, "id":291, "name":"Paige", "region":"New Mexico"}
+{"gs_id":173242, "id":850, "name":"cscathysun", "region":"Pennsylvania"}
+{"gs_id":175544, "id":847, "name":"piguy314159", "region":"Minnesota"}
+{"gs_id":98817, "id":504, "name":"miligram", "region":"New Jersey"}
+{"gs_id":128892, "id":690, "name":"ZOM", "region":"Texas"}
+{"gs_id":174634, "id":118, "name":"Sapphron", "region":"Illinois"}
+{"gs_id":173183, "id":446, "name":"rilegoat", "region":"Pennsylvania"}
+{"gs_id":175589, "id":907, "name":"crabigail", "region":"Georgia"}
+{"gs_id":175495, "id":783, "name":"MisterGuy_", "region":"North Carolina"}
+{"gs_id":173097, "id":861, "name":"Ambisinister", "region":"Maryland"}
+{"gs_id":175519, "id":795, "name":"BigDoomsday", "region":"Pennsylvania"}
+{"gs_id":168269, "id":860, "name":"Santiii", "region":"Colombia"}
+{"gs_id":175709, "id":1022, "name":"Mavy", "region":"Poland"}
+{"gs_id":168599, "id":882, "name":"PARTY MAN X", "region":"Minnesota"}
+{"gs_id":66721, "id":876, "name":"ryany0", "region":"United Kingdom"}
+{"gs_id":75808, "id":31, "name":"plight", "region":"Unspecified"}
+{"gs_id":173513, "id":727, "name":"Juci", "region":"Australia"}
+{"gs_id":77168, "id":774, "name":"Electromuis", "region":"Netherlands"}
+{"gs_id":4793, "id":964, "name":"TheTruck", "region":"Pennsylvania"}
+{"gs_id":94669, "id":176, "name":"Pimentaw", "region":"Brazil"}
+{"gs_id":75729, "id":195, "name":"help", "region":"Georgia"}
+{"gs_id":4036, "id":569, "name":"Spooty", "region":"Illinois"}
+{"gs_id":173789, "id":720, "name":"Lazerlord", "region":"Maryland"}
+{"gs_id":173621, "id":909, "name":"Zbader", "region":"Colorado"}
+{"gs_id":66673, "id":143, "name":"ChiefSkittles", "region":"South Carolina"}
+{"gs_id":175518, "id":793, "name":"ProjectileComet", "region":"Kentucky"}
+{"gs_id":94283, "id":916, "name":"Snil4", "region":"Unspecified"}
+{"gs_id":173861, "id":299, "name":"Hidden", "region":"New Jersey"}
+{"gs_id":173016, "id":164, "name":"omgukk", "region":"California (South)"}
+{"gs_id":167992, "id":797, "name":"SanHelbert", "region":"Colombia"}
+{"gs_id":175147, "id":528, "name":"9NATH9N", "region":"Utah"}
+{"gs_id":175371, "id":264, "name":"Cool Brick", "region":"Utah"}
+{"gs_id":175522, "id":802, "name":"Jagc", "region":"Colombia"}
+{"gs_id":129324, "id":402, "name":"DarwynHyena", "region":"New Hampshire"}
+{"gs_id":66704, "id":560, "name":"FideLin", "region":"Chile"}
+{"gs_id":175567, "id":880, "name":"chelly", "region":"Virginia"}
+{"gs_id":173907, "id":445, "name":"Tuto", "region":"Colombia"}
+{"gs_id":46750, "id":32, "name":"ashastral", "region":"Washington"}
+{"gs_id":174444, "id":454, "name":"max101", "region":"California (South)"}
+{"gs_id":173277, "id":422, "name":"cg505", "region":"California (North)"}
+{"gs_id":174213, "id":678, "name":"wooffull", "region":"Massachusetts"}
+{"gs_id":128260, "id":1054, "name":"nock", "region":"California (South)"}
+{"gs_id":7106, "id":325, "name":"AngelR4vE", "region":"Colombia"}
+{"gs_id":175347, "id":1062, "name":"Dmtechno", "region":"California (North)"}
+{"gs_id":175772, "id":1069, "name":"djfipu", "region":"Poland"}
+{"gs_id":173808, "id":334, "name":"Madkurre", "region":"Finland"}
+{"gs_id":175425, "id":601, "name":"SMX Stan", "region":"Unspecified"}
+{"gs_id":175473, "id":724, "name":"quartz", "region":"Illinois"}
+{"gs_id":173550, "id":484, "name":"twored", "region":"Wisconsin"}
+{"gs_id":12, "id":418, "name":"zxevik", "region":"New Jersey"}
+{"gs_id":175516, "id":787, "name":"joonamo", "region":"Finland"}
+{"gs_id":175608, "id":924, "name":"GospelEXEBar", "region":"Massachusetts"}
+{"gs_id":6027, "id":284, "name":"b4mv", "region":"New Jersey"}
+{"gs_id":174829, "id":307, "name":"pogscar", "region":"Australia"}
+{"gs_id":173342, "id":757, "name":"N30S", "region":"Colombia"}
+{"gs_id":173130, "id":431, "name":"Cheeze", "region":"California (North)"}
+{"gs_id":174966, "id":562, "name":"ImTootToot", "region":"Minnesota"}
+{"gs_id":149151, "id":1017, "name":"jmf", "region":"Utah"}
+{"gs_id":168218, "id":1064, "name":"gudetama", "region":"California (North)"}
+{"gs_id":162988, "id":1096, "name":"BootsMegamix", "region":"New York"}
+{"gs_id":127796, "id":410, "name":"scientificRex", "region":"California (South)"}
+{"gs_id":174955, "id":546, "name":"ucoa", "region":"Colorado"}
+{"gs_id":173399, "id":75, "name":"DJEmbrace", "region":"Minnesota"}
+{"gs_id":170954, "id":493, "name":"Cheerio", "region":"Texas"}
+{"gs_id":175221, "id":251, "name":"atticusgg", "region":"Australia"}
+{"gs_id":127790, "id":628, "name":"emcat", "region":"Michigan"}
+{"gs_id":173434, "id":742, "name":"NickTrioxin", "region":"Virginia"}
+{"gs_id":55445, "id":776, "name":"NekoMithos", "region":"Netherlands"}
+{"gs_id":127930, "id":715, "name":"Astriferous", "region":"California (North)"}
+{"gs_id":91184, "id":510, "name":"Roujo", "region":"Quebec"}
+{"gs_id":173081, "id":602, "name":"sessu", "region":"California (North)"}
+{"gs_id":1481, "id":884, "name":"kimalaka", "region":"Ohio"}
+{"gs_id":75728, "id":704, "name":"yaniel", "region":"Finland"}
+{"gs_id":173564, "id":178, "name":"AppleDew", "region":"Florida"}
+{"gs_id":148688, "id":435, "name":"Magmar", "region":"Kentucky"}
+{"gs_id":175384, "id":388, "name":"HeySora", "region":"Switzerland"}
+{"gs_id":3631, "id":792, "name":"Steve_V", "region":"Quebec"}
+{"gs_id":5080, "id":729, "name":"JohnDesire", "region":"Pennsylvania"}
+{"gs_id":173253, "id":250, "name":"NinuKinuski", "region":"Finland"}
+{"gs_id":31275, "id":807, "name":"latiosruby", "region":"Washington"}
+{"gs_id":175703, "id":1021, "name":"p0x", "region":"Chile"}
+{"gs_id":175510, "id":801, "name":"Killerkid451 ", "region":"Rhode Island"}
+{"gs_id":175593, "id":911, "name":"ChaparralCoyote", "region":"Indiana"}
+{"gs_id":136228, "id":511, "name":"SawBo", "region":"Washington"}
+{"gs_id":173279, "id":137, "name":"KitGamer", "region":"Maryland"}
+{"gs_id":175630, "id":944, "name":"Frosebas", "region":"Colombia"}
+{"gs_id":75622, "id":293, "name":"FuriousDCSL", "region":"California (South)"}
+{"gs_id":173629, "id":488, "name":"RamoDavi", "region":"New Hampshire"}
+{"gs_id":173661, "id":796, "name":"volt20", "region":"Connecticut"}
+{"gs_id":173400, "id":840, "name":"Fblthp", "region":"Washington"}
+{"gs_id":173637, "id":449, "name":"hlp", "region":"Texas"}
+{"gs_id":175135, "id":535, "name":"ToastyPenguin", "region":"North Carolina"}
+{"gs_id":175402, "id":451, "name":"BandiCat", "region":"Texas"}
+{"gs_id":136487, "id":891, "name":"mxl100", "region":"North Carolina"}
+{"gs_id":173071, "id":199, "name":"mustanginexile", "region":"California (North)"}
+{"gs_id":127823, "id":192, "name":"JONBUDDY", "region":"Florida"}
+{"gs_id":173955, "id":971, "name":"Raazar", "region":"France"}
+{"gs_id":3016, "id":681, "name":"TehDerek", "region":"Unspecified"}
+{"gs_id":1090, "id":332, "name":"Jester", "region":"United Kingdom"}
+{"gs_id":175529, "id":815, "name":"toibo.bi", "region":"California (South)"}
+{"gs_id":175353, "id":261, "name":"meecheezink", "region":"Georgia"}
+{"gs_id":175407, "id":485, "name":"Nimocchi", "region":"California (North)"}
+{"gs_id":175058, "id":378, "name":"Nino", "region":"Italy"}
+{"gs_id":5591, "id":469, "name":"ortiz", "region":"Michigan"}
+{"gs_id":174970, "id":706, "name":"Maryushi3", "region":"Poland"}
+{"gs_id":173710, "id":888, "name":"gentu", "region":"New Jersey"}
+{"gs_id":74441, "id":522, "name":"CrashCringle12", "region":"Pennsylvania"}
+{"gs_id":132059, "id":821, "name":"IzzyLockhardt", "region":"Ohio"}
+{"gs_id":5727, "id":580, "name":"Pangolin", "region":"California (North)"}
+{"gs_id":174814, "id":444, "name":"autumn!!", "region":"Michigan"}
+{"gs_id":173549, "id":271, "name":"svhavok", "region":"California (South)"}
+{"gs_id":175728, "id":1032, "name":"saiga12", "region":"Florida"}
+{"gs_id":4057, "id":414, "name":"luda", "region":"Florida"}
+{"gs_id":35282, "id":561, "name":"Kailaria", "region":"Illinois"}
+{"gs_id":172903, "id":354, "name":"richtr8", "region":"Australia"}
+{"gs_id":175443, "id":653, "name":"MayMay", "region":"Venezuela"}
+{"gs_id":4384, "id":918, "name":"Obi2", "region":"Finland"}
+{"gs_id":173441, "id":728, "name":"BayPerz", "region":"Colombia"}
+{"gs_id":165784, "id":634, "name":"cloverwolf", "region":"Washington"}
+{"gs_id":173110, "id":172, "name":"Shane_ITG_", "region":"United Kingdom"}
+{"gs_id":175488, "id":746, "name":"POOH!", "region":"Colombia"}
+{"gs_id":31568, "id":153, "name":"xapa", "region":"Chile"}
+{"gs_id":165900, "id":412, "name":"RatherBe", "region":"Virginia"}
+{"gs_id":173304, "id":154, "name":"teri", "region":"Ontario"}
+{"gs_id":173683, "id":44, "name":"TakuMii", "region":"Alberta"}
+{"gs_id":175486, "id":744, "name":"EDJI", "region":"Colombia"}
+{"gs_id":66610, "id":283, "name":"FabSab44", "region":"Ontario"}
+{"gs_id":174237, "id":604, "name":"Reina0111", "region":"Poland"}
+{"gs_id":508, "id":489, "name":"camsta4", "region":"Australia"}
+{"gs_id":173298, "id":309, "name":"JuiKuen", "region":"Oklahoma"}
+{"gs_id":132053, "id":958, "name":"pball0010", "region":"West Virginia"}
+{"gs_id":44927, "id":625, "name":"Loak", "region":"Wisconsin"}
+{"gs_id":131549, "id":343, "name":"Thumbsy", "region":"Netherlands"}
+{"gs_id":3378, "id":739, "name":"STsung", "region":"Czech Republic"}
+{"gs_id":175375, "id":234, "name":"PizzaLovers007", "region":"California (South)"}
+{"gs_id":175335, "id":889, "name":"Milosita ", "region":"Chile"}
+{"gs_id":173221, "id":800, "name":"martinbirch", "region":"British Columbia"}
+{"gs_id":539, "id":820, "name":"Dancefreak", "region":"United Kingdom"}
+{"gs_id":175565, "id":903, "name":"QTurtle", "region":"Florida"}
+{"gs_id":78188, "id":335, "name":"samross", "region":"Puerto Rico"}
+{"gs_id":113250, "id":326, "name":"RAN.S", "region":"Japan"}
+{"gs_id":174092, "id":290, "name":"sabidesu", "region":"Missouri"}
+{"gs_id":103169, "id":358, "name":"nabulator", "region":"New Jersey"}
+{"gs_id":175393, "id":383, "name":"henna2", "region":"Finland"}
+{"gs_id":175759, "id":1058, "name":"barjo69", "region":"Chile"}
+{"gs_id":66717, "id":866, "name":"AXB", "region":"California (South)"}
+{"gs_id":155530, "id":934, "name":"San19", "region":"Colombia"}
+{"gs_id":173349, "id":571, "name":"DragonDelgar", "region":"Georgia"}
+{"gs_id":173666, "id":927, "name":"SHIBE", "region":"Illinois"}
+{"gs_id":175275, "id":972, "name":"Aisumi", "region":"Poland"}
+{"gs_id":175661, "id":973, "name":"ZZUnlimited", "region":"Oregon"}
+{"gs_id":175493, "id":760, "name":"MONO_COL", "region":"Colombia"}
+{"gs_id":165759, "id":682, "name":"dusk", "region":"Oklahoma"}
+{"gs_id":134276, "id":649, "name":"wermi", "region":"Poland"}
+{"gs_id":175592, "id":912, "name":"Piles-chan", "region":"New Jersey"}
+{"gs_id":175485, "id":743, "name":"MeesterMyst", "region":"Florida"}
+{"gs_id":163926, "id":666, "name":"42", "region":"Connecticut"}
+{"gs_id":66508, "id":583, "name":"Horsey", "region":"Arizona"}
+{"gs_id":173516, "id":558, "name":"CernaML", "region":"California (South)"}
+{"gs_id":127865, "id":476, "name":"asellus", "region":"South Korea"}
+{"gs_id":345, "id":294, "name":"Kaze", "region":"Florida"}
+{"gs_id":175755, "id":1050, "name":"Joako", "region":"Chile"}
+{"gs_id":66708, "id":400, "name":"NNNNNN", "region":"Utah"}
+{"gs_id":175376, "id":281, "name":"bxrru", "region":"New York"}
+{"gs_id":173719, "id":79, "name":"Kraite", "region":"Pennsylvania"}
+{"gs_id":173414, "id":721, "name":"AxelSparkster", "region":"Minnesota"}
+{"gs_id":172887, "id":311, "name":"Kashy", "region":"Australia"}
+{"gs_id":175445, "id":655, "name":"sirmoses", "region":"Colorado"}
+{"gs_id":173308, "id":289, "name":"soriin_k", "region":"Maryland"}
+{"gs_id":127812, "id":788, "name":"MrCrete", "region":"Rhode Island"}
+{"gs_id":173752, "id":770, "name":"Mikerob", "region":"Colombia"}
+{"gs_id":2910, "id":232, "name":"Vagabond", "region":"Nebraska"}
+{"gs_id":175428, "id":616, "name":"DinkusITC", "region":"Georgia"}
+{"gs_id":173560, "id":864, "name":"slybat", "region":"California (North)"}
+{"gs_id":2323, "id":947, "name":"Dark Orochi", "region":"California (North)"}
+{"gs_id":7107, "id":935, "name":"yyr", "region":"New York"}
+{"gs_id":175769, "id":1065, "name":"MattyG", "region":"California (North)"}
+{"gs_id":8157, "id":459, "name":"BONG", "region":"Ohio"}
+{"gs_id":173759, "id":629, "name":"Kaps", "region":"Washington"}
+{"gs_id":173544, "id":684, "name":"ali_magica", "region":"Pennsylvania"}
+{"gs_id":174873, "id":359, "name":"undrscore", "region":"Puerto Rico"}
+{"gs_id":175360, "id":342, "name":"Goode", "region":"Sweden"}
+{"gs_id":66670, "id":255, "name":"Staphf", "region":"Nebraska"}
+{"gs_id":144942, "id":490, "name":"itg_Kage", "region":"United Kingdom"}
+{"gs_id":173360, "id":532, "name":"Dyne322", "region":"Ohio"}
+{"gs_id":146112, "id":734, "name":"Eddie_J", "region":"California (South)"}
+{"gs_id":174863, "id":565, "name":"tappy", "region":"Massachusetts"}
+{"gs_id":5023, "id":892, "name":"SteveReen", "region":"Washington"}
+{"gs_id":165854, "id":197, "name":"Nazrininator", "region":"Connecticut"}
+{"gs_id":163632, "id":531, "name":"Zap", "region":"Sweden"}
+{"gs_id":3116, "id":626, "name":"PenguinMessiah", "region":"Unspecified"}
+{"gs_id":165640, "id":811, "name":"bibbzzu", "region":"California (North)"}
+{"gs_id":175272, "id":436, "name":"niccalis", "region":"North Carolina"}
+{"gs_id":165801, "id":996, "name":"Powdaboi", "region":"Washington"}
+{"gs_id":173229, "id":7, "name":"bkirz", "region":"Washington"}
+{"gs_id":174173, "id":47, "name":"lillyvideogames", "region":"Germany"}
+{"gs_id":175563, "id":874, "name":"Blackrainer", "region":"Finland"}
+{"gs_id":3240, "id":464, "name":"AlienSix", "region":"Nevada"}
+{"gs_id":165806, "id":87, "name":"Ky_Dash", "region":"New Brunswick"}
+{"gs_id":173070, "id":545, "name":"Brick Davis", "region":"Georgia"}
+{"gs_id":175607, "id":923, "name":"seroTONEin", "region":"Ohio"}
+{"gs_id":175197, "id":1068, "name":"Derk", "region":"California (North)"}
+{"gs_id":173148, "id":163, "name":"LT", "region":"California (North)"}
+{"gs_id":175370, "id":638, "name":"trido2", "region":"Illinois"}
+{"gs_id":173396, "id":691, "name":"pauliwrath", "region":"Illinois"}
+{"gs_id":175667, "id":983, "name":"psychodellic", "region":"Illinois"}
+{"gs_id":175396, "id":420, "name":"Himolaeski Homer", "region":"Finland"}
+{"gs_id":128280, "id":518, "name":"GreatDameCygnus", "region":"California (North)"}
+{"gs_id":7791, "id":194, "name":"CinnamonPie", "region":"British Columbia"}
+{"gs_id":173126, "id":750, "name":"thepaperkat", "region":"California (North)"}
+{"gs_id":173133, "id":275, "name":"JoeWhitt", "region":"Rhode Island"}
+{"gs_id":174857, "id":778, "name":"Naraku", "region":"Puerto Rico"}
+{"gs_id":175427, "id":613, "name":"derpjosh", "region":"California (North)"}
+{"gs_id":174568, "id":374, "name":"JellySlosh", "region":"Texas"}
+{"gs_id":172949, "id":665, "name":"big bird", "region":"Unspecified"}
+{"gs_id":175632, "id":967, "name":"emiess48", "region":"Chile"}
+{"gs_id":174972, "id":552, "name":"AlexCilantro", "region":"California (South)"}
+{"gs_id":175524, "id":805, "name":"G4to", "region":"Colombia"}
+{"gs_id":173658, "id":133, "name":"false_parallax", "region":"Unspecified"}
+{"gs_id":173265, "id":826, "name":"nazu", "region":"Colorado"}
+{"gs_id":174123, "id":828, "name":"Ketsakura", "region":"Rhode Island"}
+{"gs_id":66772, "id":591, "name":"djlunatix", "region":"Australia"}
+{"gs_id":79, "id":1018, "name":"bluechows", "region":"California (North)"}
+{"gs_id":173497, "id":360, "name":"newtim", "region":"North Carolina"}
+{"gs_id":1300, "id":206, "name":"iamBGS", "region":"Pennsylvania"}
+{"gs_id":127793, "id":540, "name":"jv", "region":"Washington"}
+{"gs_id":173307, "id":452, "name":"Yaksa", "region":"Oregon"}
+{"gs_id":175685, "id":1004, "name":"MicMac", "region":"California (North)"}
+{"gs_id":56430, "id":754, "name":"thefreemansbackup", "region":"Illinois"}
+{"gs_id":4393, "id":702, "name":"Juggles", "region":"Wisconsin"}
+{"gs_id":167028, "id":8, "name":"eightbitderp", "region":"Florida"}
+{"gs_id":172891, "id":845, "name":"partybus", "region":"Rhode Island"}
+{"gs_id":66813, "id":865, "name":"MCThammer", "region":"Illinois"}
+{"gs_id":147944, "id":771, "name":"Frky", "region":"California (North)"}
+{"gs_id":175383, "id":316, "name":"DenryuRider", "region":"Philippines"}
+{"gs_id":173519, "id":756, "name":"oggvaldo", "region":"Unspecified"}
+{"gs_id":113020, "id":852, "name":"K.Jones", "region":"Illinois"}
+{"gs_id":26, "id":495, "name":"devilzukin", "region":"New Jersey"}
+{"gs_id":174917, "id":993, "name":"Henny", "region":"California (South)"}
+{"gs_id":173805, "id":961, "name":"ThereGoesMySanity", "region":"Ohio"}
+{"gs_id":175686, "id":1030, "name":"iCherry7", "region":"Colombia"}
+{"gs_id":175199, "id":586, "name":"Gh0zt", "region":"California (South)"}
+{"gs_id":175410, "id":533, "name":"ObsidianSkin", "region":"Tennessee"}
+{"gs_id":175441, "id":648, "name":"MetAteM", "region":"United Kingdom"}
+{"gs_id":173370, "id":1026, "name":"rom_step", "region":"Connecticut"}
+{"gs_id":175631, "id":943, "name":"SmileyOuO", "region":"Alabama"}
+{"gs_id":173056, "id":71, "name":"Braeden", "region":"Pennsylvania"}
+{"gs_id":173385, "id":703, "name":"nifterific", "region":"Arizona"}
+{"gs_id":50387, "id":895, "name":"AndyBurnsITG", "region":"Oregon"}
+{"gs_id":7558, "id":242, "name":"PanStyle", "region":"France"}
+{"gs_id":173775, "id":759, "name":"Dimples", "region":"British Columbia"}
+{"gs_id":173432, "id":809, "name":"expcake", "region":"California (North)"}
+{"gs_id":173418, "id":769, "name":"Aetherspike", "region":"Kentucky"}
+{"gs_id":76290, "id":981, "name":"Brat", "region":"California (North)"}
+{"gs_id":175584, "id":900, "name":"Vexi", "region":"Finland"}
+{"gs_id":175416, "id":608, "name":"Stepman Designs", "region":"Texas"}
+{"gs_id":66777, "id":498, "name":"beeabay", "region":"Finland"}
+{"gs_id":173001, "id":361, "name":"Foxxo", "region":"Minnesota"}
+{"gs_id":173374, "id":296, "name":"TwoAi", "region":"Unspecified"}
+{"gs_id":175087, "id":767, "name":"L!AM", "region":"Colombia"}
+{"gs_id":66551, "id":516, "name":"TopherK", "region":"California (North)"}
+{"gs_id":174241, "id":765, "name":"HellsingKo", "region":"Colombia"}
+{"gs_id":82526, "id":333, "name":"natano", "region":"Austria"}
+{"gs_id":175784, "id":1084, "name":"beqa", "region":"Alabama"}
+{"gs_id":1851, "id":687, "name":"EVOriginal", "region":"Texas"}
+{"gs_id":175653, "id":965, "name":"Kurplode", "region":"Texas"}
+{"gs_id":175431, "id":623, "name":"Konfine", "region":"Illinois"}
+{"gs_id":173459, "id":977, "name":"jediknite", "region":"North Carolina"}
+{"gs_id":7652, "id":1076, "name":"C_Drek", "region":"Colombia"}
+{"gs_id":173682, "id":853, "name":"norek", "region":"Poland"}
+{"gs_id":31240, "id":838, "name":"Tuhka", "region":"France"}
+{"gs_id":1979, "id":698, "name":"(OZA)", "region":"Italy"}
+{"gs_id":144973, "id":393, "name":"maboesanman", "region":"Illinois"}
+{"gs_id":173089, "id":959, "name":"Stycky.keys", "region":"New Jersey"}
+{"gs_id":175545, "id":842, "name":"CHAOTICA", "region":"New York"}
+{"gs_id":66714, "id":369, "name":"lunal3blanc", "region":"Unspecified"}
+{"gs_id":142618, "id":741, "name":"Cronoxx", "region":"Colombia"}
+{"gs_id":66457, "id":851, "name":"igr2", "region":"Unspecified"}
+{"gs_id":30901, "id":989, "name":"Quanto", "region":"Ontario"}
+{"gs_id":73473, "id":1088, "name":"Robbumon", "region":"Delaware"}
+{"gs_id":165832, "id":1012, "name":"Yeyeito", "region":"Colombia"}
+{"gs_id":175372, "id":203, "name":"FrankieFusion22", "region":"Maryland"}
+{"gs_id":173429, "id":473, "name":"Cob", "region":"New York"}
+{"gs_id":173816, "id":733, "name":"Niuq", "region":"Poland"}
+{"gs_id":173664, "id":777, "name":"BlurryLuvsYou", "region":"Germany"}
+{"gs_id":175779, "id":1082, "name":"Avalous", "region":"Arizona"}
+{"gs_id":174977, "id":646, "name":"DlimDhady", "region":"Australia"}
+{"gs_id":175543, "id":833, "name":"joaoalex", "region":"Brazil"}
+{"gs_id":173480, "id":974, "name":"robotmeadows", "region":"Quebec"}
+{"gs_id":129524, "id":997, "name":"L*A0N", "region":"New Mexico"}
+{"gs_id":173303, "id":103, "name":"Avaloneum", "region":"Finland"}
+{"gs_id":173777, "id":501, "name":"DeathofaStar", "region":"California (North)"}
+{"gs_id":175437, "id":893, "name":"tehfyre", "region":"Illinois"}
+{"gs_id":127887, "id":773, "name":"jenx", "region":"Austria"}
+{"gs_id":175450, "id":839, "name":"ArchOwL", "region":"Ohio"}
+{"gs_id":66472, "id":1094, "name":"Silke", "region":"Austria"}
+{"gs_id":175541, "id":836, "name":"BOT", "region":"Colorado"}
+{"gs_id":135709, "id":1073, "name":"Sbuxsurg", "region":"Arizona"}
+{"gs_id":149574, "id":310, "name":"kayzero", "region":"Chile"}
+{"gs_id":135228, "id":834, "name":"hintz", "region":"Michigan"}
+{"gs_id":168898, "id":1045, "name":"KomboKrusher", "region":"Louisiana"}
+{"gs_id":114726, "id":14, "name":"Scrypts", "region":"Maryland"}
+{"gs_id":66190, "id":812, "name":"mtgmackid", "region":"Illinois"}
+{"gs_id":173857, "id":349, "name":"Jocab", "region":"Ohio"}
+{"gs_id":173794, "id":978, "name":"Locoyokopoco", "region":"Alberta"}
+{"gs_id":173087, "id":74, "name":"Gr00txD", "region":"Brazil"}
+{"gs_id":172888, "id":305, "name":"ipie4fun", "region":"Texas"}
+{"gs_id":172946, "id":986, "name":"NYOOOOOM", "region":"Arizona"}
+{"gs_id":66765, "id":471, "name":"Nato", "region":"Washington"}
+{"gs_id":173481, "id":508, "name":"CedricSM", "region":"Quebec"}
+{"gs_id":76690, "id":894, "name":"OtakuBot", "region":"Virginia"}
+{"gs_id":172905, "id":670, "name":"weaselriot", "region":"Ohio"}
+{"gs_id":165529, "id":663, "name":"ArsNova", "region":"New Jersey"}
+{"gs_id":175557, "id":869, "name":"MattyX6", "region":"California (South)"}
+{"gs_id":175380, "id":614, "name":"iTeoSpazzatura", "region":"Colombia"}
+{"gs_id":173751, "id":468, "name":"ptcht", "region":"Alabama"}
+{"gs_id":174652, "id":841, "name":"DEVLZUKN", "region":"California (North)"}
+{"gs_id":75812, "id":624, "name":"mastamaxx", "region":"Texas"}
+{"gs_id":173618, "id":711, "name":"Competingsnail", "region":"Minnesota"}
+{"gs_id":173638, "id":642, "name":"markspen", "region":"Washington"}
+{"gs_id":175729, "id":1075, "name":"UserError", "region":"Georgia"}
+{"gs_id":66634, "id":181, "name":"Catoxis", "region":"Mississippi"}
+{"gs_id":172932, "id":551, "name":"Zergh", "region":"Ontario"}
+{"gs_id":173347, "id":753, "name":"Rooney", "region":"Alabama"}
+{"gs_id":173609, "id":798, "name":"quaternary", "region":"Unspecified"}
+{"gs_id":174446, "id":584, "name":"Grieviious", "region":"Alberta"}
+{"gs_id":175494, "id":764, "name":"KekDubber", "region":"New York"}
+{"gs_id":173052, "id":346, "name":"CrispyDave", "region":"Italy"}
+{"gs_id":163910, "id":337, "name":"The_Break", "region":"Russian Federation"}
+{"gs_id":174901, "id":1051, "name":"DanielsanX4A", "region":"Connecticut"}
+{"gs_id":172970, "id":406, "name":"Fake Flake", "region":"Missouri"}
+{"gs_id":173958, "id":837, "name":"Mawntee", "region":"Ontario"}
+{"gs_id":128906, "id":1023, "name":"Chrizux", "region":"Finland"}
+{"gs_id":173695, "id":848, "name":"rhiannonak", "region":"Colorado"}
+{"gs_id":174925, "id":832, "name":"kdwavour", "region":"Texas"}
+{"gs_id":173149, "id":534, "name":"Rya", "region":"Germany"}
+{"gs_id":175761, "id":1055, "name":"Starlight ", "region":"California (South)"}
+{"gs_id":75763, "id":919, "name":"Smanki", "region":"Russian Federation"}
+{"gs_id":173465, "id":881, "name":"Nick PNW", "region":"Idaho"}
+{"gs_id":165925, "id":676, "name":"Snow Latte", "region":"Colombia"}
+{"gs_id":173107, "id":220, "name":"Kibazuka", "region":"New Jersey"}
+{"gs_id":6601, "id":683, "name":"old man Blazing", "region":"Wisconsin"}
+{"gs_id":173171, "id":372, "name":"TIZZ", "region":"Finland"}
+{"gs_id":109985, "id":244, "name":"soler98012", "region":"Spain"}
+{"gs_id":175626, "id":940, "name":"Khaoskid663", "region":"Quebec"}
+{"gs_id":66799, "id":717, "name":"BradyRyan", "region":"California (South)"}
+{"gs_id":173972, "id":413, "name":"G O O C H", "region":"Wisconsin"}
+{"gs_id":80607, "id":592, "name":"Stefe", "region":"Poland"}
+{"gs_id":483, "id":813, "name":"UK.s34n", "region":"United Kingdom"}
+{"gs_id":66380, "id":1039, "name":"GenesisRapshodos", "region":"Colombia"}
+{"gs_id":173080, "id":550, "name":"NoxiousOtter", "region":"Manitoba"}
+{"gs_id":72662, "id":1038, "name":"Digi0127", "region":"Florida"}
+{"gs_id":175741, "id":1037, "name":"vvdUnderscore", "region":"Arizona"}
+{"gs_id":173413, "id":668, "name":"FRCO", "region":"Colombia"}
+{"gs_id":35225, "id":438, "name":"rckywong", "region":"California (North)"}
+{"gs_id":174850, "id":953, "name":"antifun NB", "region":"Florida"}
+{"gs_id":172988, "id":391, "name":"The_DJax", "region":"Michigan"}
+{"gs_id":175528, "id":816, "name":"Crispy", "region":"California (North)"}
+{"gs_id":175526, "id":810, "name":"RFM", "region":"New Brunswick"}
+{"gs_id":175742, "id":1040, "name":"QueenToast", "region":"Illinois"}
+{"gs_id":173189, "id":567, "name":"steviebearrrr", "region":"Colorado"}
+{"gs_id":172592, "id":373, "name":"jck!!", "region":"Italy"}
+{"gs_id":173447, "id":859, "name":"Kaju_Inu", "region":"Illinois"}
+{"gs_id":173328, "id":761, "name":"LUPIZA", "region":"Colombia"}
+{"gs_id":173264, "id":956, "name":"jemihon", "region":"Finland"}
+{"gs_id":127775, "id":318, "name":"nv", "region":"Ontario"}
+{"gs_id":175474, "id":752, "name":"Pyon", "region":"Pennsylvania"}
+{"gs_id":128742, "id":942, "name":"gabbyjay", "region":"California (North)"}
+{"gs_id":175606, "id":921, "name":"riikka", "region":"Alabama"}
+{"gs_id":173872, "id":1034, "name":"Panaman", "region":"Texas"}
+{"gs_id":175436, "id":897, "name":"Wendy Ho Wendy Ho", "region":"Australia"}
+{"gs_id":66763, "id":822, "name":"Urza", "region":"Sweden"}
+{"gs_id":175352, "id":844, "name":"Catra7654", "region":"Maryland"}
+{"gs_id":173737, "id":705, "name":"G_r_e_g_i ", "region":"Quebec"}
+{"gs_id":174956, "id":960, "name":"Bryan1", "region":"Chile"}
+{"gs_id":174170, "id":605, "name":"piankejk", "region":"Poland"}
+{"gs_id":173539, "id":701, "name":"lyrycyl", "region":"Washington"}
+{"gs_id":76070, "id":763, "name":"Max Forever", "region":"British Columbia"}
+{"gs_id":175765, "id":1060, "name":"tsubasa83_ch", "region":"Unspecified"}
+{"gs_id":175754, "id":1049, "name":"Koishi", "region":"New York"}
+{"gs_id":175681, "id":999, "name":"hugh_jass", "region":"Unspecified"}
+{"gs_id":66494, "id":500, "name":"Alessy", "region":"Alabama"}
+{"gs_id":174299, "id":1036, "name":"Kappajog", "region":"Poland"}
+{"gs_id":175506, "id":775, "name":"Quwertyn", "region":"Poland"}
+{"gs_id":174533, "id":609, "name":"Lika", "region":"Poland"}
+{"gs_id":175523, "id":804, "name":"Gig4", "region":"Colombia"}
+{"gs_id":170672, "id":204, "name":"Cathadan", "region":"California (South)"}
+{"gs_id":108801, "id":315, "name":"Mango", "region":"Ontario"}
+{"gs_id":172939, "id":867, "name":"pedroza", "region":"New Mexico"}
+{"gs_id":46737, "id":529, "name":"Dyl", "region":"New York"}
+{"gs_id":173433, "id":443, "name":"Clasko", "region":"Illinois"}
+{"gs_id":173341, "id":58, "name":"catcat", "region":"Unspecified"}
+{"gs_id":173515, "id":781, "name":"dando", "region":"Italy"}
+{"gs_id":173376, "id":920, "name":"ViperDev", "region":"Italy"}
+{"gs_id":175452, "id":679, "name":"Broasty", "region":"Florida"}
+{"gs_id":174249, "id":680, "name":"Raikachan", "region":"United Kingdom"}
+{"gs_id":175640, "id":949, "name":"BiggerJohn", "region":"Alabama"}
+{"gs_id":4707, "id":227, "name":"JNero", "region":"British Columbia"}
+{"gs_id":173439, "id":375, "name":"danizom813", "region":"Pennsylvania"}
+{"gs_id":175475, "id":725, "name":"Jabronski", "region":"Ontario"}
+{"gs_id":173182, "id":63, "name":"DDDAAA", "region":"Maryland"}
+{"gs_id":173359, "id":110, "name":"xancara", "region":"Pennsylvania"}
+{"gs_id":7886, "id":268, "name":"Zarzob", "region":"New Zealand"}
+{"gs_id":173316, "id":527, "name":"putham", "region":"Texas"}
+{"gs_id":129649, "id":447, "name":"MY BRAND", "region":"North Carolina"}
+{"gs_id":2836, "id":512, "name":"Pushmataha", "region":"Texas"}
+{"gs_id":5843, "id":221, "name":"Nebel", "region":"Maryland"}
+{"gs_id":129740, "id":10, "name":"TENKO", "region":"France"}
+{"gs_id":175537, "id":824, "name":"Lorena", "region":"Colombia"}
+{"gs_id":160, "id":72, "name":"Dexor", "region":"Washington"}
+{"gs_id":173194, "id":937, "name":"Cowboy Tony (NO BAR)", "region":"Pennsylvania"}
+{"gs_id":175774, "id":1072, "name":"ismaess48", "region":"Chile"}
+{"gs_id":66688, "id":1066, "name":"FRNKODEV", "region":"Chile"}
+{"gs_id":127868, "id":239, "name":"chroma", "region":"New York"}
+{"gs_id":4991, "id":1000, "name":"Luvbun", "region":"California (North)"}
+{"gs_id":128319, "id":945, "name":"tertu", "region":"Minnesota"}
+{"gs_id":172955, "id":132, "name":"ottrp0p", "region":"Washington"}
+{"gs_id":5557, "id":910, "name":"Kommisar", "region":"New Brunswick"}
+{"gs_id":175458, "id":696, "name":"little_blake", "region":"Alabama"}
+{"gs_id":175527, "id":835, "name":"stowwww", "region":"Colorado"}
+{"gs_id":4400, "id":292, "name":"titandude21", "region":"New Jersey"}
+{"gs_id":66760, "id":975, "name":"implode", "region":"Illinois"}
+{"gs_id":175723, "id":1027, "name":"dnsh", "region":"California (South)"}
+{"gs_id":175558, "id":870, "name":"Aerostin", "region":"California (North)"}
+{"gs_id":175609, "id":925, "name":"SunSet", "region":"Colombia"}
+{"gs_id":175517, "id":789, "name":"Maurycyt", "region":"Poland"}
