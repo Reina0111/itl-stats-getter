@@ -47,7 +47,9 @@ def get_user(type, value)
     user
 end
 
-def check_stats(user, type)
+@levels = [7, 8, 9, 10, 11, 12, 13, 14]
+
+def check_stats(user, type, multi = false)
     case type
     when "totalPasses"
         songs = user["topScores"]
@@ -58,15 +60,29 @@ def check_stats(user, type)
         songs = user["charts"]
         user_songs.map! { |u_song| songs.find { |song| song["hash"] == u_song["chartHash"] } }
         grouped_levels = user_songs.group_by { |song| song["meter"] }
-        puts "Songs by level for user #{user["entrant"]["name"]}"
-        puts grouped_levels.sort.map { |k, v| "Level #{k.to_s.rjust(2, " ")}: #{v.count.to_s.rjust(3, " ")}" }
+        
+        if multi
+            levels_count = @levels.map { |lvl| grouped_levels[lvl] ? grouped_levels[lvl].count : 0 }
+            puts "#{user["entrant"]["name"].to_s.rjust(10, " ")} | #{levels_count.map { |lvl| lvl.to_s.rjust(3, " ") }.join(" | ")}"
+        else
+            puts "Top 75 songs by level for user #{user["entrant"]["name"]}"
+            puts "-----------#{@levels.map { |_| "+" + "-"*5 }.join}"
+            puts grouped_levels.sort.map { |k, v| "Level #{k.to_s.rjust(2, " ")}: #{v.count.to_s.rjust(3, " ")}" }
+        end
     when "songsByLevelTop"
         user_songs = user["topScores"].sort_by { |song| song["points"] }.reverse[0..74]
         songs = user["charts"]
         user_songs.map! { |u_song| songs.find { |song| song["hash"] == u_song["chartHash"] } }
         grouped_levels = user_songs.group_by { |song| song["meter"] }
-        puts "Top 75 songs by level for user #{user["entrant"]["name"]}"
-        puts grouped_levels.sort.map { |k, v| "Level #{k.to_s.rjust(2, " ")}: #{v.count.to_s.rjust(3, " ")}" }
+        
+        if multi
+            levels_count = @levels.map { |lvl| grouped_levels[lvl] ? grouped_levels[lvl].count : 0 }
+            puts "-----------#{@levels.map { |_| "+" + "-"*5 }.join}"
+            puts "#{user["entrant"]["name"].to_s.rjust(10, " ")} | #{levels_count.map { |lvl| lvl.to_s.rjust(3, " ") }.join(" | ")}"
+        else
+            puts "Top 75 songs by level for user #{user["entrant"]["name"]}"
+            puts grouped_levels.sort.map { |k, v| "Level #{k.to_s.rjust(2, " ")}: #{v.count.to_s.rjust(3, " ")}" }
+        end
     end
 end
 
@@ -84,9 +100,13 @@ def main
         users_list = [{ type: ARGV[0], value: ARGV[1] }]
     end
 
+    if users_list.count > 1 && ["songsByLevel", "songsByLevelTop"].include?(ARGV[2])
+        puts "#{'User\Level'.to_s.rjust(10, " ")} | #{@levels.map { |lvl| lvl.to_s.rjust(3, " ") }.join(" | ")}"
+    end
+
     users_list.each do |u|
         user = get_user(u[:type], u[:value])
-        check_stats(user, ARGV[2])
+        check_stats(user, ARGV[2], users_list.count > 1)
     end
 end
 
