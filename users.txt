@@ -842,3 +842,9 @@
 {"gs_id":175558, "id":870, "name":"Aerostin", "region":"California (North)"}
 {"gs_id":175609, "id":925, "name":"SunSet", "region":"Colombia"}
 {"gs_id":175517, "id":789, "name":"Maurycyt", "region":"Poland"}
+{"gs_id":66234, "id":1105, "name":"aweaver", "region":"Russian Federation"}
+{"gs_id":173467, "id":1107, "name":"Okepa Makoi", "region":"Massachusetts"}
+{"gs_id":76910, "id":440, "name":"din", "region":"Alabama"}
+{"gs_id":173206, "id":931, "name":"ApexAzimuth", "region":"Washington"}
+{"gs_id":164145, "id":877, "name":"Koizumi Chineko", "region":"Poland"}
+{"gs_id":175808, "id":1100, "name":"arkkeeper", "region":"Nevada"}
