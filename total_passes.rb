@@ -117,7 +117,8 @@ def main
         users_itl << get_user(u[:type], u[:value])
     end
 
-    users_itl.sort { |user| user["entrant"]["rankingPoints"] }.reverse.each do |u|
+    users_itl = users_itl.sort_by { |user| user["entrant"]["rankingPoints"].to_i }.reverse
+    users_itl.each do |u|
         check_stats(u, ARGV[2], users_itl.count > 1 ? users_itl.count : 0)
     end
 end
