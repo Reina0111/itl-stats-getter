@@ -16,3 +16,4 @@ available STAT_TO_CHECK options:
 `totalPasses` shows total passes of all songs (if song was played 3 times it will be counted 3 times)
 `songsByLevel` shows number of songs passed on each difficulty level
 `songsByLevelTop` shows number of songs passed on each difficulty level from user's top 75
+`points` shows ranking and total points
