@@ -1,12 +1,1 @@
-United Kingdom
-Sweden
-Poland
-Finland
-Italy
-France
-Netherlands
-Germany
-Switzerland
-Czech Republic
-Austria
-Spain
+"United Kingdom, Sweden, Poland, Finland, Italy, France, Netherlands, Germany, Switzerland, Czech Republic, Austria, Spain, Scotland"
