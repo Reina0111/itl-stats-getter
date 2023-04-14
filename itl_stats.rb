@@ -96,7 +96,11 @@ def users_mode(options)
 
   case options[:kind]
   when "regions"
-    existing_ids = list.map { |user| user[:gs_id] }.select { |id| !users_list_ids.include?(id) }
+    if users_list_ids
+      existing_ids = list.map { |user| user[:gs_id] }.select { |id| !users_list_ids.include?(id) }
+    else
+      existing_ids = []
+    end
     full_list = []
     regions = []
     

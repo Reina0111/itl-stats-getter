@@ -867,3 +867,4 @@
 {"gs_id":32523,"id":1115,"name":"cammi","region":"Florida"}
 {"gs_id":127810,"id":1083,"name":"BigC","region":"California (South)"}
 {"gs_id":175831,"id":1119,"name":"BerylVR","region":"Unspecified"}
+{"gs_id":175521,"id":1122,"name":"Zaluzja","region":"Poland"}

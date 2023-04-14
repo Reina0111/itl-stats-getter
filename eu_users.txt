@@ -104,3 +104,4 @@
 {"gs_id":164145,"id":877,"name":"Koizumi Chineko","region":"Poland"}
 {"gs_id":175595,"id":1019,"name":"Aestivalia","region":"Scotland"}
 {"gs_id":175736,"id":1116,"name":"RisuRisu","region":"France"}
+{"gs_id":175521,"id":1122,"name":"Zaluzja","region":"Poland"}
