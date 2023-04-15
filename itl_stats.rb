@@ -4,7 +4,7 @@ require 'json'
 
 MODE_OPTIONS = ["users", "stats"]
 STATS_KIND_OPTIONS = ["passes", "levels", "levelstop", "points"]
-USERS_KIND_OPTIONS = ["regions", "list"]
+USERS_KIND_OPTIONS = ["regions", "list", "listbyregions"]
 ALL_KINDS = USERS_KIND_OPTIONS + STATS_KIND_OPTIONS
 
 @levels = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
@@ -130,6 +130,14 @@ def users_mode(options)
     region_list = users_list&.select { |user| regions.include?(user["region"]) } if regions
     region_list&.each do |user|
       puts user.to_json
+    end
+  when "listbyregions"
+    regions = users_list&.map { |user| user["region"] }.uniq
+    region_length = regions.map { |region| region.length }.max
+    regions.map! { |region| { region: region, users: users_list&.select { |user| user["region"] == region }.count } }
+
+    regions.sort_by { |r| [-r[:users], r[:region]] }.each do |region|
+      puts "#{region[:region].rjust(region_length, " ")} - #{region[:users].to_s.rjust(3, " ")} users"
     end
   end
 end
