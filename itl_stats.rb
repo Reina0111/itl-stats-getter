@@ -26,13 +26,15 @@ def parseOptions
     options = {}
   end
 
-  options[:mode] = MODE_OPTIONS[0] if !options[:mode]
-
-  if options[:mode] && options[:kind]
-    options
+  if USERS_KIND_OPTIONS.include?(options[:kind])
+    options[:mode] = "users"
+  elsif STATS_KIND_OPTIONS.include?(options[:kind])
+    options[:mode] = "stats"
   else
-    {}
+    options = {}
   end
+
+  options
 end
 
 def get_leaderboard(my_list = nil)
