@@ -2,16 +2,16 @@ Small project for getting useful data from ITL2023 competition
 
 # itl_stats.rb
 Single file for all options
+```
 Usage: itl_stats [options]
-    -m, --mode mode                  Available options: users, stats (default - users)
+    -m, --mode mode                  Available options: users, stats (set automatically based on kind)
     -k, --kind kind                  Kind of user list you want to get or kind of stats you want to check. 
-                                     Available options for users: regions, list, listbyregions, listbyregionstop
-                                     Available options for stats: passes, levels, levelstop, points, averageByRegion
+                                     Available options: regions, list, listbyregions, listbyregionstop, passes, levels, levelstop, points, averagebyregion
     -f, --file file                  Name of file you want to use as input
     -i, --id id                      Id of itl user you want to check stats for
     -n, --nick nick                  Nick of itl user you want to check stats for
-    -r, --regions regions            List of regions - used when mode and kind are set to 'users' and 'list'
-
+    -r, --regions regions            List of regions - used for 'users' mode and 'list' kind
+```
 ## Example of uses
 `ruby itl_stats.rb -m users -k regions`
 Outputs list of all itl users in format `{"gs_id":174237, "id":604, "name":"Reina0111", "region":"Poland"}`
@@ -48,10 +48,13 @@ Outputs total points and ranking points for all players from list given as file 
 `ruby itl_stats.rb -m stats -k averagebyregion -f eu_users.txt`
 Outputs average ranking points of users divided by regions
 
-# users_list.rb
+
+# Deprecated
+
+## users_list.rb
 This file is used to get list of all users participating in competition from https://itl2023.groovestats.com page with additional info about users regions
 
-# total_passes.rb
+## total_passes.rb
 This file is used to get additional stats
 Usage:
 if you want to check multiple people at once you can use
