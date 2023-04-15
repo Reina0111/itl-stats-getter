@@ -211,14 +211,20 @@ def average_by_region(users_list)
   regions.map! { |region| { region: region, users: users_list&.select { |user| user["region"] == region } } }
 
   scores_length = 0
+  median_length = 0
   regions.each do |region|
-    scores = get_leaderboard(region[:users]).map { |user| user["rankingPoints"].to_i }.sum / region[:users].count.to_f
-    region[:scores] = scores.round(2)
+    scores = get_leaderboard(region[:users]).map { |user| user["rankingPoints"].to_i }.sort
+    scores_avg = scores.sum / region[:users].count.to_f
+
+    len = scores.count
+    region[:median] = ((scores[(len - 1) / 2] + scores[len / 2]) / 2.0).round(2)
+    region[:scores] = (scores.sum / scores.count).round(2)
     scores_length = [scores_length, region[:scores].to_s.length].max
+    median_length = [median_length, region[:median].to_s.length].max
   end
 
   regions.sort_by { |r| [-r[:scores], r[:region]] }.each do |region|
-    puts "#{region[:region].rjust(region_length, " ")} - #{region[:scores].to_s.rjust(scores_length, " ")}"
+    puts "#{region[:region].rjust(region_length, " ")} - #{region[:scores].to_s.rjust(scores_length, " ")} Avg | #{region[:median].to_s.rjust(median_length, " ")} Median"
   end
 end
 
