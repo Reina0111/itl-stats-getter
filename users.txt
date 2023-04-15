@@ -876,3 +876,5 @@
 {"gs_id":175448,"id":661,"name":"CLK","region":"Italy"}
 {"gs_id":175763,"id":1056,"name":"lizzu","region":"Texas"}
 {"gs_id":174805,"id":1111,"name":"Wiktini","region":"Poland"}
+{"gs_id":175846,"id":1126,"name":"Krezcent","region":"Australia"}
+{"gs_id":173599,"id":1127,"name":"Chmurek","region":"Poland"}

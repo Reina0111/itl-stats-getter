@@ -28,3 +28,4 @@
 {"gs_id":167276, "id":502, "name":"Ayaka", "region":"United Kingdom"}
 {"gs_id":175521,"id":1122,"name":"Zaluzja","region":"Poland"}
 {"gs_id":174805,"id":1111,"name":"Wiktini","region":"Poland"}
+{"gs_id":173599,"id":1127,"name":"Chmurek","region":"Poland"}
