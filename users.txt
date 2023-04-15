@@ -868,3 +868,11 @@
 {"gs_id":127810,"id":1083,"name":"BigC","region":"California (South)"}
 {"gs_id":175831,"id":1119,"name":"BerylVR","region":"Unspecified"}
 {"gs_id":175521,"id":1122,"name":"Zaluzja","region":"Poland"}
+{"gs_id":172899,"id":39,"name":"amaiiberry","region":"New Zealand"}
+{"gs_id":564,"id":1123,"name":"DaggettOnTwitch","region":"California (South)"}
+{"gs_id":173463,"id":1125,"name":"Roscoe","region":"California (North)"}
+{"gs_id":173514,"id":1071,"name":"Eijiken","region":"Ohio"}
+{"gs_id":173157,"id":707,"name":"Whipplash","region":"Ohio"}
+{"gs_id":175448,"id":661,"name":"CLK","region":"Italy"}
+{"gs_id":175763,"id":1056,"name":"lizzu","region":"Texas"}
+{"gs_id":174805,"id":1111,"name":"Wiktini","region":"Poland"}

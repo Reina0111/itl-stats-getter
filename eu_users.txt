@@ -83,8 +83,10 @@
 {"gs_id":127887,"id":773,"name":"jenx","region":"Austria"}
 {"gs_id":66472,"id":1094,"name":"Silke","region":"Austria"}
 {"gs_id":173052,"id":346,"name":"CrispyDave","region":"Italy"}
+{"gs_id":163910,"id":337,"name":"The_Break","region":"Russian Federation"}
 {"gs_id":128906,"id":1023,"name":"Chrizux","region":"Finland"}
 {"gs_id":173149,"id":534,"name":"Rya","region":"Germany"}
+{"gs_id":75763,"id":919,"name":"Smanki","region":"Russian Federation"}
 {"gs_id":173171,"id":372,"name":"TIZZ","region":"Finland"}
 {"gs_id":109985,"id":244,"name":"soler98012","region":"Spain"}
 {"gs_id":80607,"id":592,"name":"Stefe","region":"Poland"}
@@ -101,7 +103,10 @@
 {"gs_id":174249,"id":680,"name":"Raikachan","region":"United Kingdom"}
 {"gs_id":129740,"id":10,"name":"TENKO","region":"France"}
 {"gs_id":175517,"id":789,"name":"Maurycyt","region":"Poland"}
+{"gs_id":66234,"id":1105,"name":"aweaver","region":"Russian Federation"}
 {"gs_id":164145,"id":877,"name":"Koizumi Chineko","region":"Poland"}
 {"gs_id":175595,"id":1019,"name":"Aestivalia","region":"Scotland"}
 {"gs_id":175736,"id":1116,"name":"RisuRisu","region":"France"}
 {"gs_id":175521,"id":1122,"name":"Zaluzja","region":"Poland"}
+{"gs_id":175448,"id":661,"name":"CLK","region":"Italy"}
+{"gs_id":174805,"id":1111,"name":"Wiktini","region":"Poland"}

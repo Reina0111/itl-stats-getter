@@ -6,7 +6,7 @@ Usage: itl_stats [options]
     -m, --mode mode                  Available options: users, stats (default - users)
     -k, --kind kind                  Kind of user list you want to get or kind of stats you want to check. 
                                      Available options for users: regions, list, listbyregions
-                                     Available options for stats: passes, levels, levelstop, points
+                                     Available options for stats: passes, levels, levelstop, points, averageByRegion
     -f, --file file                  Name of file you want to use as input
     -i, --id id                      Id of itl user you want to check stats for
     -n, --nick nick                  Nick of itl user you want to check stats for
@@ -42,6 +42,8 @@ Outputs total points and ranking points for player with given id
 `ruby itl_stats.rb -m stats -k points -f users.txt`
 Outputs total points and ranking points for all players from list given as file input
 
+`ruby itl_stats.rb -m stats -k averagebyregion -f eu_users.txt`
+Outputs average ranking points of users divided by regions
 
 # users_list.rb
 This file is used to get list of all users participating in competition from https://itl2023.groovestats.com page with additional info about users regions

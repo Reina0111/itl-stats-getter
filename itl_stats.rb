@@ -3,7 +3,7 @@ require 'open-uri'
 require 'json'
 
 MODE_OPTIONS = ["users", "stats"]
-STATS_KIND_OPTIONS = ["passes", "levels", "levelstop", "points"]
+STATS_KIND_OPTIONS = ["passes", "levels", "levelstop", "points", "averagebyregion"]
 USERS_KIND_OPTIONS = ["regions", "list", "listbyregions"]
 ALL_KINDS = USERS_KIND_OPTIONS + STATS_KIND_OPTIONS
 
@@ -96,10 +96,9 @@ def users_mode(options)
 
   case options[:kind]
   when "regions"
+    existing_ids = list.map { |user| user[:gs_id] }
     if users_list_ids
-      existing_ids = list.map { |user| user[:gs_id] }.select { |id| !users_list_ids.include?(id) }
-    else
-      existing_ids = []
+      existing_ids = existing_ids.select { |id| !users_list_ids.include?(id) }
     end
     full_list = []
     regions = []
@@ -156,6 +155,11 @@ def stats_mode(options)
     end
   end
 
+  if options[:kind] == "averagebyregion"
+    average_by_region(user_list)
+    return nil
+  end
+
   user_list.each do |user|
     user = get_user(user["id"], nil)[0] if !user["entrant"]
     case options[:kind]
@@ -198,6 +202,23 @@ def stats_mode(options)
         puts "  Total Points: #{user["entrant"]["totalPoints"].to_s[0..14].rjust(15, " ")}"
       end
     end
+  end
+end
+
+def average_by_region(users_list)
+  regions = users_list.map { |user| user["region"] }.uniq
+  region_length = regions.map { |region| region.length }.max
+  regions.map! { |region| { region: region, users: users_list&.select { |user| user["region"] == region } } }
+
+  scores_length = 0
+  regions.each do |region|
+    scores = get_leaderboard(region[:users]).map { |user| user["rankingPoints"].to_i }.sum / region[:users].count.to_f
+    region[:scores] = scores.round(2)
+    scores_length = [scores_length, region[:scores].to_s.length].max
+  end
+
+  regions.sort_by { |r| [-r[:scores], r[:region]] }.each do |region|
+    puts "#{region[:region].rjust(region_length, " ")} - #{region[:scores].to_s.rjust(scores_length, " ")}"
   end
 end
 
