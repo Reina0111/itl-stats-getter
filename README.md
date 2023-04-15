@@ -5,7 +5,7 @@ Single file for all options
 Usage: itl_stats [options]
     -m, --mode mode                  Available options: users, stats (default - users)
     -k, --kind kind                  Kind of user list you want to get or kind of stats you want to check. 
-                                     Available options for users: regions, list, listbyregions
+                                     Available options for users: regions, list, listbyregions, listbyregionstop
                                      Available options for stats: passes, levels, levelstop, points, averageByRegion
     -f, --file file                  Name of file you want to use as input
     -i, --id id                      Id of itl user you want to check stats for
@@ -21,6 +21,9 @@ Outputs list of itl users from selected regions from list given as file input
 
 `ruby itl_stats.rb -m users -k listByRegions -f users.txt`
 Outputs number of players from given file divided by regions
+
+`ruby itl_stats.rb -m users -k listByRegionsTop -f users.txt`
+Outputs number of players with at least 75 different passes from given file divided by regions
 
 `ruby itl_stats.rb -m stats -k passes -i 604`
 Outputs total passes of player with given id

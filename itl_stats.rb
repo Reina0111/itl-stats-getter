@@ -4,7 +4,7 @@ require 'json'
 
 MODE_OPTIONS = ["users", "stats"]
 STATS_KIND_OPTIONS = ["passes", "levels", "levelstop", "points", "averagebyregion"]
-USERS_KIND_OPTIONS = ["regions", "list", "listbyregions"]
+USERS_KIND_OPTIONS = ["regions", "list", "listbyregions", "listbyregionstop"]
 ALL_KINDS = USERS_KIND_OPTIONS + STATS_KIND_OPTIONS
 
 @levels = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
@@ -89,15 +89,15 @@ def get_user(id, nick)
 end
 
 def users_mode(options)
-  list = get_leaderboard()
-  
-  list.map! { |user| { gs_id: user["membersId"], id: user["id"], name: user["name"] } }
     
   users_list = parse_file_or_get_user(options[:file], options[:id], options[:nick])
   users_list_ids = users_list&.map { |user| user["gs_id"] }
 
   case options[:kind]
   when "regions"
+    list = get_leaderboard()
+    list.map! { |user| { gs_id: user["membersId"], id: user["id"], name: user["name"] } }
+
     existing_ids = list.map { |user| user[:gs_id] }
     if users_list_ids
       existing_ids = existing_ids.select { |id| !users_list_ids.include?(id) }
@@ -133,6 +133,17 @@ def users_mode(options)
       puts user.to_json
     end
   when "listbyregions"
+    regions = users_list&.map { |user| user["region"] }.uniq
+    region_length = regions.map { |region| region.length }.max
+    regions.map! { |region| { region: region, users: users_list&.select { |user| user["region"] == region }.count } }
+
+    regions.sort_by { |r| [-r[:users], r[:region]] }.each do |region|
+      puts "#{region[:region].rjust(region_length, " ")} - #{region[:users].to_s.rjust(3, " ")} users"
+    end
+  when "listbyregionstop"
+    list = get_leaderboard(users_list)
+    ids = list.select { |user| user["totalPass"].to_i + user["totalFc"].to_i + user["totalFec"].to_i + user["totalQuad"].to_i + user["totalQuint"].to_i >= 75 }.map { |user| user["id"] }
+    users_list = users_list&.select { |user| ids.include?(user["id"]) }
     regions = users_list&.map { |user| user["region"] }.uniq
     region_length = regions.map { |region| region.length }.max
     regions.map! { |region| { region: region, users: users_list&.select { |user| user["region"] == region }.count } }
