@@ -2,6 +2,8 @@ require 'optparse'
 require 'open-uri'
 require 'json'
 
+require_relative 'regions_flags.rb'
+
 MODE_OPTIONS = ["users", "stats"]
 STATS_KIND_OPTIONS = ["passes", "levels", "levelstop", "points", "averagebyregion"]
 USERS_KIND_OPTIONS = ["regions", "list", "listbyregions", "listbyregionstop"]
@@ -137,8 +139,10 @@ def users_mode(options)
     region_length = regions.map { |region| region.length }.max
     regions.map! { |region| { region: region, users: users_list&.select { |user| user["region"] == region }.count } }
 
+    i = 1
     regions.sort_by { |r| [-r[:users], r[:region]] }.each do |region|
-      puts "#{region[:region].rjust(region_length, " ")} - #{region[:users].to_s.rjust(3, " ")} users"
+      puts "#{i.to_s.rjust(2, " ")}. #{region[:region].rjust(region_length, " ")} - #{region[:users].to_s.rjust(3, " ")} users"
+      i += 1
     end
   when "listbyregionstop"
     list = get_leaderboard(users_list)
@@ -163,13 +167,15 @@ def stats_mode(options)
     when "levels", "levelstop"
       puts "#{" " * 16}#{@levels.map { |lvl| "| " + lvl.to_s.rjust(3, " ") + " " }.join }"
       puts "#{"-" * 16}#{@levels.map { |_| "+" + "-"*5 }.join}"
-    when "points"
-      puts "#{" "*16}|ranking| total"
     end
   end
 
-  if options[:kind] == "averagebyregion"
+  case options[:kind] 
+  when "averagebyregion"
     average_by_region(user_list)
+    return nil
+  when "points"
+    points(user_list)
     return nil
   end
 
@@ -206,14 +212,6 @@ def stats_mode(options)
         puts "Top 75 songs by level for user #{user["entrant"]["name"]}"
         puts grouped_levels.sort.map { |k, v| "Level #{k.to_s.rjust(3, " ")}: #{v.count.to_s.rjust(3, " ")}" }
       end
-    when "points"
-      if multi
-        puts "#{user["entrant"]["name"].to_s[0..14].rjust(15, " ")} |#{user["entrant"]["rankingPoints"].to_s.rjust(7, " ") }|#{user["entrant"]["totalPoints"].to_s.rjust(7, " ") }"
-      else
-        puts "          User: #{user["entrant"]["name"].to_s[0..14].rjust(15, " ")}"
-        puts "Ranking Points: #{user["entrant"]["rankingPoints"].to_s[0..14].rjust(15, " ")}"
-        puts "  Total Points: #{user["entrant"]["totalPoints"].to_s[0..14].rjust(15, " ")}"
-      end
     end
   end
 end
@@ -239,6 +237,32 @@ def average_by_region(users_list)
   regions.sort_by { |r| [-r[:scores], r[:region]] }.each do |region|
     puts "#{region[:region].rjust(region_length, " ")} - #{region[:scores].to_s.rjust(scores_length, " ")} Avg | #{region[:median].to_s.rjust(median_length, " ")} Median"
   end
+end
+
+def points(user_list)
+  list = get_leaderboard(user_list)
+  use_flags = user_list.map { |user| user["region"] }.uniq.count > 1
+  i = 1
+  no_lenght = list.count.to_s.length
+  if list.count > 1
+    puts "#{" "*21}|ranking| total"
+    list.each do |user|
+      flag = "(#{get_flag(user_list.find { |el| el["id"] == user["id"] })})"
+      puts "#{i.to_s.rjust(no_lenght, " ")}. #{"#{flag} " if use_flags}#{user["name"].to_s[0..14].rjust(15, " ")} |#{user["rankingPoints"].to_s.rjust(7, " ") }|#{user["totalPoints"].to_s.rjust(7, " ") }"
+      i += 1
+    end
+  else
+    user = list.first
+    puts "          User: #{user["name"].to_s[0..14].rjust(15, " ")}"
+    puts "Ranking Points: #{user["rankingPoints"].to_s[0..14].rjust(15, " ")}"
+    puts "  Total Points: #{user["totalPoints"].to_s[0..14].rjust(15, " ")}"
+  end
+
+end
+
+def get_flag(user)
+  region = user["region"]
+  REGION_FLAGS[region.to_sym]
 end
 
 def main
