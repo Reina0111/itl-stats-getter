@@ -878,3 +878,17 @@
 {"gs_id":174805,"id":1111,"name":"Wiktini","region":"Poland"}
 {"gs_id":175846,"id":1126,"name":"Krezcent","region":"Australia"}
 {"gs_id":173599,"id":1127,"name":"Chmurek","region":"Poland"}
+{"gs_id":173160,"id":872,"name":"Decoy","region":"Utah"}
+{"gs_id":66727,"id":1140,"name":"HISA","region":"Japan"}
+{"gs_id":151195,"id":1129,"name":"TheMusserO","region":"Finland"}
+{"gs_id":173326,"id":1130,"name":"Arroyo!!","region":"Colombia"}
+{"gs_id":6059,"id":1131,"name":"Will_MaxX","region":"Colombia"}
+{"gs_id":173306,"id":1132,"name":"ibuprofen","region":"Ontario"}
+{"gs_id":174161,"id":985,"name":"Xidi","region":"Illinois"}
+{"gs_id":173446,"id":1142,"name":"Cadrin","region":"Poland"}
+{"gs_id":175513,"id":782,"name":"Maru96","region":"Italy"}
+{"gs_id":7457,"id":13,"name":"Krushrpants","region":"Pennsylvania"}
+{"gs_id":33185,"id":1057,"name":"Tyty","region":"California (North)"}
+{"gs_id":175850,"id":1134,"name":"mono69","region":"Chile"}
+{"gs_id":175849,"id":1133,"name":"sakura69","region":"Chile"}
+{"gs_id":174544,"id":610,"name":"Ushio","region":"Poland"}

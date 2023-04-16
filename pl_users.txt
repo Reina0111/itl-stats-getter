@@ -29,3 +29,5 @@
 {"gs_id":175521,"id":1122,"name":"Zaluzja","region":"Poland"}
 {"gs_id":174805,"id":1111,"name":"Wiktini","region":"Poland"}
 {"gs_id":173599,"id":1127,"name":"Chmurek","region":"Poland"}
+{"gs_id":173446,"id":1142,"name":"Cadrin","region":"Poland"}
+{"gs_id":174544,"id":610,"name":"Ushio","region":"Poland"}
