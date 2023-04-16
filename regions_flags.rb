@@ -29,7 +29,7 @@ REGION_FLAGS = {
   "Maryland": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "North Carolina": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "Poland": 'PL'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
-  "Finland": 'AX'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
+  "Finland": 'FI'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "New Jersey": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "Utah": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "Ontario": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),

@@ -247,8 +247,8 @@ def points(user_list)
   if list.count > 1
     puts "#{" "*21}|ranking| total"
     list.each do |user|
-      flag = "(#{get_flag(user_list.find { |el| el["id"] == user["id"] })})"
-      puts "#{i.to_s.rjust(no_lenght, " ")}. #{"#{flag} " if use_flags}#{user["name"].to_s[0..14].rjust(15, " ")} |#{user["rankingPoints"].to_s.rjust(7, " ") }|#{user["totalPoints"].to_s.rjust(7, " ") }"
+      flag = get_flag(user_list.find { |el| el["id"] == user["id"] })
+      puts "#{"`" if use_flags}#{i.to_s.rjust(no_lenght, " ")}. #{user["name"].to_s[0..9].rjust(10, " ")} |#{user["rankingPoints"].to_s.rjust(7, " ") }|#{user["totalPoints"].to_s.rjust(7, " ") } #{"`#{flag}" if use_flags}"
       i += 1
     end
   else
