@@ -31,3 +31,4 @@
 {"gs_id":173599,"id":1127,"name":"Chmurek","region":"Poland"}
 {"gs_id":173446,"id":1142,"name":"Cadrin","region":"Poland"}
 {"gs_id":174544,"id":610,"name":"Ushio","region":"Poland"}
+{"gs_id":175669,"id":988,"name":"HayThyAi","region":"Poland"}

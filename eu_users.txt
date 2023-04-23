@@ -115,3 +115,5 @@
 {"gs_id":173446,"id":1142,"name":"Cadrin","region":"Poland"}
 {"gs_id":175513,"id":782,"name":"Maru96","region":"Italy"}
 {"gs_id":174544,"id":610,"name":"Ushio","region":"Poland"}
+{"gs_id":173797,"id":1166,"name":"Suolainen","region":"Finland"}
+{"gs_id":175669,"id":988,"name":"HayThyAi","region":"Poland"}
