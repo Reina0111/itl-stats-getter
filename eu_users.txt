@@ -117,3 +117,6 @@
 {"gs_id":174544,"id":610,"name":"Ushio","region":"Poland"}
 {"gs_id":173797,"id":1166,"name":"Suolainen","region":"Finland"}
 {"gs_id":175669,"id":988,"name":"HayThyAi","region":"Poland"}
+{"gs_id":173427,"id":1200,"name":"Mingeh","region":"Netherlands"}
+{"gs_id":5242,"id":1219,"name":"arx","region":"Finland"}
+{"gs_id":4056,"id":589,"name":"PRO.Gemi","region":"Finland"}

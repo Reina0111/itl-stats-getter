@@ -6,7 +6,7 @@ REGION_FLAGS = {
   "Colorado": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "Pennsylvania": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "Virginia": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
-  "Georgia": 'GE'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
+  "Georgia": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "California (South)": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "Chile": 'CL'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "Washington": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
@@ -77,4 +77,5 @@ REGION_FLAGS = {
   "Russian Federation": 'RU'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "Spain": 'ES'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "Scotland": 'GB'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
+  "Kansas": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
 }
