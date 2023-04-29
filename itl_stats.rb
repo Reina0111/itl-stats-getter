@@ -141,7 +141,9 @@ def users_mode(options)
 
     i = 1
     regions.sort_by { |r| [-r[:users], r[:region]] }.each do |region|
-      puts "#{i.to_s.rjust(2, " ")}. #{region[:region].rjust(region_length, " ")} - #{region[:users].to_s.rjust(3, " ")} users"
+      if REGION_FLAGS[region[:region].to_sym] != 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}")
+        puts "#{i.to_s.rjust(2, " ")}. #{region[:region].rjust(region_length, " ")} - #{region[:users].to_s.rjust(3, " ")} users"
+      end
       i += 1
     end
   when "listbyregionstop"
@@ -160,6 +162,7 @@ end
 
 def stats_mode(options)
   user_list = parse_file_or_get_user(options[:file], options[:id], options[:nick])
+  user_list = get_leaderboard(user_list)
   multi = user_list.count > 1
 
   if multi
@@ -177,15 +180,14 @@ def stats_mode(options)
   when "points"
     points(user_list)
     return nil
+  when "passes"
+    passes(user_list)
+    return nil
   end
 
   user_list.each do |user|
     user = get_user(user["id"], nil)[0] if !user["entrant"]
     case options[:kind]
-    when "passes"
-      songs = user["topScores"]
-      sum = songs.sum { |song| song["totalPasses"].to_i }
-      puts "#{user["entrant"]["name"].to_s.rjust(15, " ")} - passes: #{sum.to_s.rjust(3, " ")}"
     when "levels"
       user_songs = user["topScores"]
       songs = user["charts"]
@@ -213,6 +215,21 @@ def stats_mode(options)
         puts grouped_levels.sort.map { |k, v| "Level #{k.to_s.rjust(3, " ")}: #{v.count.to_s.rjust(3, " ")}" }
       end
     end
+  end
+end
+
+def passes(user_list)
+  list = []
+  user_list.each do |u|
+    user = get_user(u["id"], nil)[0] if !u["entrant"]
+    songs = user["topScores"]
+    sum = songs.sum { |song| song["totalPasses"].to_i }
+    list << { name: user["entrant"]["name"], passes: sum }
+  end
+
+  length = list.map { |u| u[:name].length }.max
+  list.sort_by { |u| -u[:passes] }.each do |u|
+    puts "#{u[:name].to_s.rjust(length, " ")} - passes: #{u[:passes].to_s.rjust(3, " ")}"
   end
 end
 
