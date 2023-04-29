@@ -25,10 +25,11 @@
 {"gs_id":174533,"id":609,"name":"Lika","region":"Poland"}
 {"gs_id":175517,"id":789,"name":"Maurycyt","region":"Poland"}
 {"gs_id":164145,"id":877,"name":"Koizumi Chineko","region":"Poland"}
-{"gs_id":167276, "id":502, "name":"Ayaka", "region":"United Kingdom"}
 {"gs_id":175521,"id":1122,"name":"Zaluzja","region":"Poland"}
 {"gs_id":174805,"id":1111,"name":"Wiktini","region":"Poland"}
 {"gs_id":173599,"id":1127,"name":"Chmurek","region":"Poland"}
 {"gs_id":173446,"id":1142,"name":"Cadrin","region":"Poland"}
 {"gs_id":174544,"id":610,"name":"Ushio","region":"Poland"}
 {"gs_id":175669,"id":988,"name":"HayThyAi","region":"Poland"}
+{"gs_id":174525,"id":1248,"name":"Kapsel","region":"Poland"}
+{"gs_id":173408,"id":1249,"name":"Nusa","region":"Poland"}

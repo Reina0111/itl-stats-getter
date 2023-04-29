@@ -120,3 +120,13 @@
 {"gs_id":173427,"id":1200,"name":"Mingeh","region":"Netherlands"}
 {"gs_id":5242,"id":1219,"name":"arx","region":"Finland"}
 {"gs_id":4056,"id":589,"name":"PRO.Gemi","region":"Finland"}
+{"gs_id":92293,"id":1218,"name":"TaikiHarada","region":"Spain"}
+{"gs_id":175943,"id":1182,"name":"Puddi","region":"Spain"}
+{"gs_id":174207,"id":487,"name":"Meta-link","region":"France"}
+{"gs_id":170802,"id":200,"name":"PerfectTaste","region":"Sweden"}
+{"gs_id":75724,"id":1228,"name":"SleepBAAA","region":"Spain"}
+{"gs_id":111763,"id":1085,"name":"Kaede","region":"France"}
+{"gs_id":173844,"id":1232,"name":"Kralde","region":"Spain"}
+{"gs_id":173272,"id":1243,"name":"CobaltSunshine","region":"United Kingdom"}
+{"gs_id":174525,"id":1248,"name":"Kapsel","region":"Poland"}
+{"gs_id":173408,"id":1249,"name":"Nusa","region":"Poland"}
