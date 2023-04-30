@@ -6,7 +6,7 @@ Single file for all options
 Usage: itl_stats [options]
     -m, --mode mode                  Available options: users, stats (set automatically based on kind)
     -k, --kind kind                  Kind of user list you want to get or kind of stats you want to check. 
-                                     Available options: regions, list, listbyregions, listbyregionstop, passes, levels, levelstop, points, averagebyregion
+                                     Available options: regions, list, listbyregions, listbyregionstop, passes, levels, levelstop, points, averagebyregion, rivals
     -f, --file file                  Name of file you want to use as input
     -i, --id id                      Id of itl user you want to check stats for
     -n, --nick nick                  Nick of itl user you want to check stats for
@@ -48,6 +48,11 @@ Outputs total points and ranking points for all players from list given as file 
 `ruby itl_stats.rb -m stats -k averagebyregion -f eu_users.txt`
 Outputs average ranking points of users divided by regions
 
+`ruby itl_stats.rb -k rivals -n Reina0111,Lika -r ex`
+Outputs difference between 2 players on common songs by ex
+
+`ruby itl_stats.rb -k rivals -i 604,609 -r points`
+Outputs difference between 2 players on common songs by ex
 
 # Deprecated
 

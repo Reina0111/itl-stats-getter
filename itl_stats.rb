@@ -5,7 +5,7 @@ require 'json'
 require_relative 'regions_flags.rb'
 
 MODE_OPTIONS = ["users", "stats"]
-STATS_KIND_OPTIONS = ["passes", "levels", "levelstop", "points", "averagebyregion"]
+STATS_KIND_OPTIONS = ["passes", "levels", "levelstop", "points", "averagebyregion", "rivals"]
 USERS_KIND_OPTIONS = ["regions", "list", "listbyregions", "listbyregionstop"]
 ALL_KINDS = USERS_KIND_OPTIONS + STATS_KIND_OPTIONS
 
@@ -55,16 +55,27 @@ end
 
 def parse_file_or_get_user(file, id, nick)
   list = []
-  return get_user(id, nick) if !file
+  
+  ids = id&.split(',')
+  nicks = nick&.split(',')
+  ids.each do |i|
+    list += get_user(i)
+  end if ids
+
+  nicks.each do |n|
+    list += get_user(nil, n)
+  end if nicks
+
+  return list.uniq if !file
 
   File.open(file).each do |line|
       list << JSON.parse(line)
   end
 
-  list
+  list.uniq
 end
 
-def get_user(id, nick)
+def get_user(id = nil, nick = nil)
   return nil if !id && !nick
 
   if !id
@@ -162,7 +173,6 @@ end
 
 def stats_mode(options)
   user_list = parse_file_or_get_user(options[:file], options[:id], options[:nick])
-  user_list = get_leaderboard(user_list)
   multi = user_list.count > 1
 
   if multi
@@ -181,10 +191,15 @@ def stats_mode(options)
     points(user_list)
     return nil
   when "passes"
+    user_list = get_leaderboard(user_list)
     passes(user_list)
+    return nil
+  when "rivals"
+    rivals(user_list, options[:regions])
     return nil
   end
 
+  user_list = get_leaderboard(user_list)
   user_list.each do |user|
     user = get_user(user["id"], nil)[0] if !user["entrant"]
     case options[:kind]
@@ -274,7 +289,62 @@ def points(user_list)
     puts "Ranking Points: #{user["rankingPoints"].to_s[0..14].rjust(15, " ")}"
     puts "  Total Points: #{user["totalPoints"].to_s[0..14].rjust(15, " ")}"
   end
+end
 
+def rivals(user_list, kind)
+  kind_type = kind.first if kind.class == Array
+  kind_type = "ex" if !["ex", "points"].include?(kind_type)
+
+  case kind_type
+  when "ex"
+    kind = :difference
+  when "points"
+    kind = :difference_p
+  end
+
+  if user_list.count != 2
+    puts "W trybie rivals musisz podać dokładnie 2 graczy"
+    return nil
+  end
+
+  # songs list [[first user songs (hashes only)], [second user songs (hashes only)]]
+  songs = user_list.map { |u| u["topScores"].map { |song| song["chartHash"] } }
+
+  # common songs list (hashes only)
+  songs = (songs.first & songs.last)
+
+  # common songs list (max_points, song level, title, hash)
+  songs_info = user_list.first["charts"]
+    .select { |song| songs.include?(song["hash"]) }
+    .map { |song| { max_points: [song["points"], 1].max, meter: song["meter"], name: song["titleRomaji"].length > 0 ? song["titleRomaji"] : song["title"], hash: song["hash"] } }
+
+  ids = user_list.map { |u| u["entrant"]["id"] }
+  # adding users scores to common songs list (ex scores and points)
+  user_list.each do |user|
+    songs_info.each do |song|
+      score = user["topScores"].select { |s| s["chartHash"] == song[:hash] }.first
+      song[user["entrant"]["id"]] = score["ex"].to_f / 100
+      song["#{user["entrant"]["id"]}_p"] = score["points"]
+    end
+  end
+
+  # adding differences to common songs list (ex scores and points)
+  songs_info.map { |song| song[:difference] = (song[ids.first] - song[ids.last]).round(2) }
+  songs_info.map { |song| song[:difference_p] = ((song["#{ids.first}_p"].to_f - song["#{ids.last}_p"])/song[:max_points]*100).round(2) }
+
+  better_scores_count = songs_info.select { |song| song[ids.first] >= song[ids.last] }.count
+
+  puts "Compare scores #{user_list.first["entrant"]["name"]} to #{user_list.last["entrant"]["name"]} by #{kind_type}"
+  puts "  diff |  lvl |                title"
+  songs_info.sort_by { |song| -song[kind] }.each_with_index do |song, index|
+    if index == better_scores_count && better_scores_count != 0
+      puts "-"*35
+    end
+
+    next if kind_type == "points" && song[:max_points] == 1
+
+    puts "#{song[kind].to_s.rjust(6, " ")} | [#{song[:meter].to_s.rjust(2, "0")}] | #{song[:name][0..19].to_s.rjust(20, ' ')}"
+  end
 end
 
 def get_flag(user)
