@@ -968,3 +968,28 @@
 {"gs_id":173408,"id":1249,"name":"Nusa","region":"Poland"}
 {"gs_id":133533,"id":1235,"name":"silentblackcat","region":"Unspecified"}
 {"gs_id":176021,"id":1229,"name":"jadefengs","region":"California (South)"}
+{"gs_id":175904,"id":1254,"name":"LIGHTW8","region":"Alabama"}
+{"gs_id":174400,"id":1250,"name":"Turbo","region":"New Jersey"}
+{"gs_id":5207,"id":1251,"name":"Kanji666","region":"New York"}
+{"gs_id":175912,"id":1170,"name":"Mr3dimensional","region":"California (South)"}
+{"gs_id":175757,"id":1052,"name":"Kriss","region":"Chile"}
+{"gs_id":176005,"id":1217,"name":"TawkSick","region":"California (North)"}
+{"gs_id":175886,"id":1155,"name":"ozurisa1803","region":"Georgia"}
+{"gs_id":66741,"id":1265,"name":"Snowball","region":"France"}
+{"gs_id":172689,"id":1262,"name":"Yuiko","region":"France"}
+{"gs_id":174097,"id":939,"name":"Yisuszzz","region":"Spain"}
+{"gs_id":7721,"id":1264,"name":"AzleKayn","region":"New York"}
+{"gs_id":132115,"id":1271,"name":"$YOHAN$","region":"Japan"}
+{"gs_id":174614,"id":404,"name":"Lolzep","region":"Pennsylvania"}
+{"gs_id":174789,"id":1263,"name":"Raiyoku","region":"France"}
+{"gs_id":176065,"id":1267,"name":"Yennimiau","region":"Chile"}
+{"gs_id":176072,"id":1273,"name":"bAnAn","region":"Poland"}
+{"gs_id":173426,"id":1209,"name":"kaberosi","region":"California (North)"}
+{"gs_id":173977,"id":1196,"name":"Dany_Denisse","region":"Chile"}
+{"gs_id":76112,"id":1266,"name":"Tailsray","region":"Russian Federation"}
+{"gs_id":175768,"id":1194,"name":"Crucisi","region":"Minnesota"}
+{"gs_id":173314,"id":514,"name":"appolose","region":"Washington"}
+{"gs_id":176067,"id":1268,"name":"Mars","region":"Alabama"}
+{"gs_id":66687,"id":1278,"name":"PinoITG","region":"Chile"}
+{"gs_id":175961,"id":1201,"name":"ATARAXIA","region":"Unspecified"}
+{"gs_id":176055,"id":1257,"name":"namaslayer","region":"California (North)"}
