@@ -2,7 +2,7 @@ require 'optparse'
 require 'open-uri'
 require 'json'
 
-require_relative 'regions_flags.rb'
+require_relative 'regions.rb'
 
 MODE_OPTIONS = ["users", "stats"]
 STATS_KIND_OPTIONS = ["passes", "levels", "levelstop", "points", "averagebyregion", "rivals"]
@@ -335,7 +335,7 @@ def rivals(user_list, kind)
   better_scores_count = songs_info.select { |song| song[ids.first] >= song[ids.last] }.count
 
   puts "Compare scores #{user_list.first["entrant"]["name"]} to #{user_list.last["entrant"]["name"]} by #{kind_type}"
-  puts "  diff |  lvl |                title"
+  puts "  diff |  lvl | title"
   songs_info.sort_by { |song| -song[kind] }.each_with_index do |song, index|
     if index == better_scores_count && better_scores_count != 0
       puts "-"*35
@@ -343,7 +343,7 @@ def rivals(user_list, kind)
 
     next if kind_type == "points" && song[:max_points] == 1
 
-    puts "#{song[kind].to_s.rjust(6, " ")} | [#{song[:meter].to_s.rjust(2, "0")}] | #{song[:name][0..19].to_s.rjust(20, ' ')}"
+    puts "#{song[kind].to_s.rjust(6, " ")} | [#{song[:meter].to_s.rjust(2, "0")}] | #{song[:name][0..19]}"
   end
 end
 

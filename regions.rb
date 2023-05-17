@@ -78,4 +78,27 @@ REGION_FLAGS = {
   "Spain": 'ES'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "Scotland": 'GB'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
   "Kansas": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
+  "Denmark": 'DK'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
+  "Alaska": 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}"),
+}
+
+EU_REGIONS = ["Austria", "Czech Republic", "Denmark", "Finland", "France", "Germany", "Italy", "Netherlands", "Poland", "Russian Federation", "Scotland", "Spain", "Sweden", "Switzerland", "United Kingdom"]
+PL_REGIONS = ["Poland"]
+US_REGIONS = ["Alabama", "Alaska", "Alberta", "Arizona", "Arkansas", "British Columbia",
+  "California (North)", "California (South)", "Colorado", "Connecticut",
+  "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana",
+  "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Manitoba", "Maryland",
+  "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri",
+  "Nebraska", "Nevada", "New Brunswick", "New Hampshire", "New Jersey",
+  "New Mexico", "New York", "North Carolina", "Ohio", "Oklahoma", "Ontario",
+  "Oregon", "Pennsylvania", "Philippines", "Quebec", "Rhode Island",
+  "South Carolina", "Tennessee", "Texas", "Utah", "Virginia", "Washington",
+  "West Virginia", "Wisconsin"
+]
+
+REGIONS_LIST = {
+  "eu": EU_REGIONS,
+  "pl": PL_REGIONS,
+  "us": US_REGIONS,
+  "world": REGION_FLAGS.keys
 }
