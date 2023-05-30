@@ -146,3 +146,6 @@
 {"gs_id":103802,"id":1237,"name":"LinusGale","region":"Spain"}
 {"gs_id":175549,"id":1340,"name":"Beatroot","region":"Poland"}
 {"gs_id":173536,"id":1279,"name":"shnarg","region":"United Kingdom"}
+{"gs_id":127596,"id":1344,"name":"Hiiro","region":"France"}
+{"gs_id":174312,"id":1345,"name":"Bakandrev","region":"Poland"}
+{"gs_id":174074,"id":1382,"name":"DanceMeeps","region":"United Kingdom"}

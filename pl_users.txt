@@ -38,3 +38,4 @@
 {"gs_id":132158,"id":1253,"name":"Kuboxxxxx","region":"Poland"}
 {"gs_id":176129,"id":1297,"name":"JustMoneko","region":"Poland"}
 {"gs_id":175549,"id":1340,"name":"Beatroot","region":"Poland"}
+{"gs_id":174312,"id":1345,"name":"Bakandrev","region":"Poland"}
