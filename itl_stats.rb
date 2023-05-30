@@ -97,6 +97,14 @@ def get_user(id = nil, nick = nil)
   URI.open("https://itl2023.groovestats.com/api/entrant/#{id}") do |uri|
       user = JSON.parse(uri.read)["data"]
   end
+  begin
+    URI.open("https://itl2023.groovestats.com/api/entrant/#{id}") do |uri|
+      user = JSON.parse(uri.read)["data"]
+    end
+  rescue Net::OpenTimeout
+    STDERR.puts "timeout for player #{id}... trying again..."
+    get_user(id)
+  end
 
   [user]
 end
@@ -240,6 +248,9 @@ def passes(user_list)
     songs = user["topScores"]
     sum = songs.sum { |song| song["totalPasses"].to_i }
     list << { name: user["entrant"]["name"], passes: sum }
+    if list.length % 25 == 0
+      STDERR.puts "#{(list.length.to_f / user_list.length * 100).round(2)}% completed"
+    end
   end
 
   length = list.map { |u| u[:name].length }.max
