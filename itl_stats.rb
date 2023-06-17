@@ -10,6 +10,7 @@ USERS_KIND_OPTIONS = ["regions", "list", "listbyregions", "listbyregionstop"]
 ALL_KINDS = USERS_KIND_OPTIONS + STATS_KIND_OPTIONS
 
 @levels = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+CHUNK_SIZES = 35
 
 def parseOptions
   options = {}
@@ -94,10 +95,8 @@ def get_user(id = nil, nick = nil)
   
   user = nil
 
-  URI.open("https://itl2023.groovestats.com/api/entrant/#{id}") do |uri|
-      user = JSON.parse(uri.read)["data"]
-  end
   begin
+    sleep 0.2
     URI.open("https://itl2023.groovestats.com/api/entrant/#{id}") do |uri|
       user = JSON.parse(uri.read)["data"]
     end
@@ -243,13 +242,43 @@ end
 
 def passes(user_list)
   list = []
-  user_list.each do |u|
-    user = get_user(u["id"], nil)[0] if !u["entrant"]
-    songs = user["topScores"]
-    sum = songs.sum { |song| song["totalPasses"].to_i }
-    list << { name: user["entrant"]["name"], passes: sum }
-    if list.length % 25 == 0
-      STDERR.puts "#{(list.length.to_f / user_list.length * 100).round(2)}% completed"
+
+  if user_list.count > CHUNK_SIZES
+    lists = user_list.each_slice(CHUNK_SIZES).to_a
+    threads = []
+    (0..lists.length-1).each do |i|
+      l = lists[i]
+      threads << Thread.new(i, l) do
+        STDERR.puts "New thread#{i} started with #{l.length} users to check"
+        Thread.current[:output] = []
+        l.each_with_index do |u, index|
+          user = nil
+          while user == nil
+            user = get_user(u["id"], nil)[0] if !u["entrant"]
+          end
+          songs = user["topScores"]
+          sum = songs.sum { |song| song["totalPasses"].to_i }
+          Thread.current[:output] << { name: user["entrant"]["name"], passes: sum }
+          if (index + 1) % 10 == 0
+            STDERR.puts "thread#{i} finished checking #{index + 1}/#{CHUNK_SIZES} users"
+          end
+        end
+      end
+    end
+
+    threads.each do |t|
+      t.join
+      list += t[:output]
+    end
+  else
+    user_list.each_with_index do |u, i|
+      user = get_user(u["id"], nil)[0] if !u["entrant"]
+      songs = user["topScores"]
+      sum = songs.sum { |song| song["totalPasses"].to_i }
+      list << { name: user["entrant"]["name"], passes: sum }
+      if i % 50 == 0
+        STDERR.puts "#{(list.length.to_f / user_list.length * 100).round(2)}% completed"
+      end
     end
   end
 
