@@ -1072,3 +1072,26 @@
 {"gs_id":75988,"id":82,"name":"Snooze","region":"Ohio"}
 {"gs_id":175599,"id":1110,"name":"shoopa","region":"Washington"}
 {"gs_id":173159,"id":1186,"name":"CJPetey","region":"Iowa"}
+{"gs_id":176584,"id":1411,"name":"MushyPeas","region":"Alabama"}
+{"gs_id":175392,"id":1177,"name":"extreme48","region":"Chile"}
+{"gs_id":176490,"id":1398,"name":"GayRobot","region":"Arizona"}
+{"gs_id":1444,"id":1425,"name":"OmniQuark","region":"Quebec"}
+{"gs_id":176500,"id":1399,"name":"Wafles","region":"Wisconsin"}
+{"gs_id":169159,"id":300,"name":"Synthromancy","region":"Australia"}
+{"gs_id":173018,"id":1422,"name":"jerkcity","region":"Nevada"}
+{"gs_id":176470,"id":1393,"name":"PeebsTV","region":"Michigan"}
+{"gs_id":176670,"id":1424,"name":"Darq","region":"Poland"}
+{"gs_id":173806,"id":1429,"name":"Orca","region":"Ohio"}
+{"gs_id":132794,"id":1392,"name":"Friday4Robbie","region":"Mexico"}
+{"gs_id":176471,"id":1394,"name":"xxuremovampirexx","region":"Georgia"}
+{"gs_id":176126,"id":1294,"name":"TaintedKev","region":"Texas"}
+{"gs_id":176752,"id":1433,"name":"Nobore","region":"Ohio"}
+{"gs_id":173615,"id":1415,"name":"Kwuarter","region":"New York"}
+{"gs_id":175172,"id":1420,"name":"W1LL_1_AM","region":"California (North)"}
+{"gs_id":176573,"id":1409,"name":"veritostitos","region":"Mexico"}
+{"gs_id":93327,"id":1241,"name":"Rabar0209","region":"Japan"}
+{"gs_id":132052,"id":980,"name":"nastharl","region":"Illinois"}
+{"gs_id":66674,"id":1410,"name":"aminuteawayx","region":"New Jersey"}
+{"gs_id":176050,"id":1365,"name":"cornyhalfling49","region":"Australia"}
+{"gs_id":173814,"id":1391,"name":"Summi","region":"Poland"}
+{"gs_id":173987,"id":873,"name":"gonzalo","region":"Chile"}

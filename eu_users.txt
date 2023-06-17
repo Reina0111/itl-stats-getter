@@ -149,3 +149,5 @@
 {"gs_id":127596,"id":1344,"name":"Hiiro","region":"France"}
 {"gs_id":174312,"id":1345,"name":"Bakandrev","region":"Poland"}
 {"gs_id":174074,"id":1382,"name":"DanceMeeps","region":"United Kingdom"}
+{"gs_id":176670,"id":1424,"name":"Darq","region":"Poland"}
+{"gs_id":173814,"id":1391,"name":"Summi","region":"Poland"}

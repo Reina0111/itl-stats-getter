@@ -100,7 +100,7 @@ def get_user(id = nil, nick = nil)
     URI.open("https://itl2023.groovestats.com/api/entrant/#{id}") do |uri|
       user = JSON.parse(uri.read)["data"]
     end
-  rescue Net::OpenTimeout
+  rescue Net::OpenTimeout, SocketError
     STDERR.puts "timeout for player #{id}... trying again..."
     get_user(id)
   end
