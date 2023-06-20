@@ -1095,3 +1095,6 @@
 {"gs_id":176050,"id":1365,"name":"cornyhalfling49","region":"Australia"}
 {"gs_id":173814,"id":1391,"name":"Summi","region":"Poland"}
 {"gs_id":173987,"id":873,"name":"gonzalo","region":"Chile"}
+{"gs_id":176776,"id":1436,"name":"Mike458","region":"New Jersey"}
+{"gs_id":176771,"id":1435,"name":"AEtherPi","region":"Colorado"}
+{"gs_id":176566,"id":1408,"name":"frank_gaming","region":"New Jersey"}
