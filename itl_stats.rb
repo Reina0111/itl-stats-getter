@@ -5,12 +5,12 @@ require 'json'
 require_relative 'regions.rb'
 
 MODE_OPTIONS = ["users", "stats"]
-STATS_KIND_OPTIONS = ["passes", "levels", "levelstop", "points", "averagebyregion", "rivals"]
+STATS_KIND_OPTIONS = ["passes", "levels", "levelstop", "points", "averagebyregion", "rivals", "songs_passes_user"]
 USERS_KIND_OPTIONS = ["regions", "list", "listbyregions", "listbyregionstop"]
 ALL_KINDS = USERS_KIND_OPTIONS + STATS_KIND_OPTIONS
 
 @levels = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
-CHUNK_SIZES = 35
+CHUNK_SIZES = 21
 
 def parseOptions
   options = {}
@@ -100,7 +100,7 @@ def get_user(id = nil, nick = nil)
     URI.open("https://itl2023.groovestats.com/api/entrant/#{id}") do |uri|
       user = JSON.parse(uri.read)["data"]
     end
-  rescue Net::OpenTimeout, SocketError
+  rescue Net::OpenTimeout, SocketError, OpenURI::HTTPError
     STDERR.puts "timeout for player #{id}... trying again..."
     get_user(id)
   end
@@ -158,10 +158,12 @@ def users_mode(options)
     regions.map! { |region| { region: region, users: users_list&.select { |user| user["region"] == region }.count } }
 
     i = 1
-    regions.sort_by { |r| [-r[:users], r[:region]] }.each do |region|
-      if REGION_FLAGS[region[:region].to_sym] != 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}")
+    regions_flags = regions.map { |r| [r, REGION_FLAGS[r[:region].to_sym]]}
+    regions_flags = regions_flags.group_by { |r| r[1] }.map { |k, v| { region: v.first[0][:region], users: v.sum { |region| region[0][:users] }} }
+    regions_flags.sort_by { |r| [-r[:users], r[:region]] }.each do |region|
+      # if REGION_FLAGS[region[:region].to_sym] != 'US'.tr('A-Z', "\u{1F1E6}-\u{1F1FF}")
         puts "#{i.to_s.rjust(2, " ")}. #{region[:region].rjust(region_length, " ")} - #{region[:users].to_s.rjust(3, " ")} users"
-      end
+      # end
       i += 1
     end
   when "listbyregionstop"
@@ -171,8 +173,9 @@ def users_mode(options)
     regions = users_list&.map { |user| user["region"] }.uniq
     region_length = regions.map { |region| region.length }.max
     regions.map! { |region| { region: region, users: users_list&.select { |user| user["region"] == region }.count } }
-
-    regions.sort_by { |r| [-r[:users], r[:region]] }.each do |region|
+    regions_flags = regions.map { |r| [r, REGION_FLAGS[r[:region].to_sym]]}
+    regions_flags = regions_flags.group_by { |r| r[1] }.map { |k, v| { region: v.first[0][:region], users: v.sum { |region| region[0][:users] }} }
+    regions_flags.sort_by { |r| [-r[:users], r[:region]] }.each do |region|
       puts "#{region[:region].rjust(region_length, " ")} - #{region[:users].to_s.rjust(3, " ")} users"
     end
   end
@@ -204,45 +207,12 @@ def stats_mode(options)
   when "rivals"
     rivals(user_list, options[:regions])
     return nil
+  when "songs_passes_user"
+    songs_passes_user(user_list)
+    return nil
   end
 
   user_list = get_leaderboard(user_list)
-  user_list.each do |user|
-    user = get_user(user["id"], nil)[0] if !user["entrant"]
-    case options[:kind]
-    when "levels"
-      user_songs = user["topScores"]
-      songs = user["charts"]
-      user_songs.map! { |u_song| songs.find { |song| song["hash"] == u_song["chartHash"] } }
-      grouped_levels = user_songs.group_by { |song| song["meter"] }
-      
-      if multi
-        levels_count = @levels.map { |lvl| grouped_levels[lvl] ? grouped_levels[lvl].count : 0 }
-        puts "#{user["entrant"]["name"].to_s[0..14].rjust(15, " ")} | #{levels_count.map { |lvl| lvl.to_s.rjust(3, " ") }.join(" | ")}"
-      else
-        puts "Songs by level for user #{user["entrant"]["name"]}"
-        puts grouped_levels.sort.map { |k, v| "Level #{k.to_s.rjust(2, " ")}: #{v.count.to_s.rjust(3, " ")}" }
-      end
-    when "levelstop"
-      user_songs = user["topScores"].sort_by { |song| song["points"] }.reverse[0..74]
-      songs = user["charts"]
-      user_songs.map! { |u_song| songs.find { |song| song["hash"] == u_song["chartHash"] } }
-      grouped_levels = user_songs.group_by { |song| song["meter"] }
-      
-      if multi
-        levels_count = @levels.map { |lvl| grouped_levels[lvl] ? grouped_levels[lvl].count : 0 }
-        puts "#{user["entrant"]["name"].to_s[0..14].rjust(15, " ")} | #{levels_count.map { |lvl| lvl.to_s.rjust(3, " ") }.join(" | ")}"
-      else
-        puts "Top 75 songs by level for user #{user["entrant"]["name"]}"
-        puts grouped_levels.sort.map { |k, v| "Level #{k.to_s.rjust(3, " ")}: #{v.count.to_s.rjust(3, " ")}" }
-      end
-    end
-  end
-end
-
-def passes(user_list)
-  list = []
-
   if user_list.count > CHUNK_SIZES
     lists = user_list.each_slice(CHUNK_SIZES).to_a
     threads = []
@@ -256,9 +226,98 @@ def passes(user_list)
           while user == nil
             user = get_user(u["id"], nil)[0] if !u["entrant"]
           end
+          case options[:kind]
+          when "levels"
+            user_songs = user["topScores"]
+            songs = user["charts"]
+            user_songs.map! { |u_song| songs.find { |song| song["hash"] == u_song["chartHash"] } }
+            grouped_levels = user_songs.group_by { |song| song["meter"] }
+
+            levels_count = @levels.map { |lvl| grouped_levels[lvl] ? grouped_levels[lvl].count : 0 }
+            Thread.current[:output] << "#{user["entrant"]["name"].to_s[0..14].rjust(15, " ")} | #{levels_count.map { |lvl| lvl.to_s.rjust(3, " ") }.join(" | ")}"
+            if (index + 1) % 10 == 0
+              STDERR.puts "thread#{i} finished checking #{index + 1}/#{CHUNK_SIZES} users"
+            end
+          when "levelstop"
+            user_songs = user["topScores"].sort_by { |song| song["points"] }.reverse[0..74]
+            songs = user["charts"]
+            user_songs.map! { |u_song| songs.find { |song| song["hash"] == u_song["chartHash"] } }
+            grouped_levels = user_songs.group_by { |song| song ? song["meter"] : 99 }
+            
+            levels_count = @levels.map { |lvl| grouped_levels[lvl] ? grouped_levels[lvl].count : 0 }
+            Thread.current[:output] << "#{user["entrant"]["name"].to_s[0..14].rjust(15, " ")} | #{levels_count.map { |lvl| lvl.to_s.rjust(3, " ") }.join(" | ")}"
+            if (index + 1) % 10 == 0
+              STDERR.puts "thread#{i} finished checking #{index + 1}/#{CHUNK_SIZES} users"
+            end
+          end
+        end
+      end
+    end
+
+    list = []
+    threads.each do |t|
+      t.join
+      list += t[:output]
+    end
+
+    list.each do |row|
+      puts row
+    end
+  else
+    user_list.each do |user|
+      user = get_user(user["id"], nil)[0] if !user["entrant"]
+      case options[:kind]
+      when "levels"
+        user_songs = user["topScores"]
+        songs = user["charts"]
+        user_songs.map! { |u_song| songs.find { |song| song["hash"] == u_song["chartHash"] } }
+        grouped_levels = user_songs.group_by { |song| song["meter"] }
+        
+        if multi
+          levels_count = @levels.map { |lvl| grouped_levels[lvl] ? grouped_levels[lvl].count : 0 }
+          puts "#{user["entrant"]["name"].to_s[0..14].rjust(15, " ")} | #{levels_count.map { |lvl| lvl.to_s.rjust(3, " ") }.join(" | ")}"
+        else
+          puts "Songs by level for user #{user["entrant"]["name"]}"
+          puts grouped_levels.sort.map { |k, v| "Level #{k.to_s.rjust(2, " ")}: #{v.count.to_s.rjust(3, " ")}" }
+        end
+      when "levelstop"
+        user_songs = user["topScores"].sort_by { |song| song["points"] }.reverse[0..74]
+        songs = user["charts"]
+        user_songs.map! { |u_song| songs.find { |song| song["hash"] == u_song["chartHash"] } }
+        grouped_levels = user_songs.group_by { |song| song["meter"] }
+        
+        if multi
+          levels_count = @levels.map { |lvl| grouped_levels[lvl] ? grouped_levels[lvl].count : 0 }
+          puts "#{user["entrant"]["name"].to_s[0..14].rjust(15, " ")} | #{levels_count.map { |lvl| lvl.to_s.rjust(3, " ") }.join(" | ")}"
+        else
+          puts "Top 75 songs by level for user #{user["entrant"]["name"]}"
+          puts grouped_levels.sort.map { |k, v| "Level #{k.to_s.rjust(3, " ")}: #{v.count.to_s.rjust(3, " ")}" }
+        end
+      end
+    end
+  end
+end
+
+def passes(user_list)
+  list = []
+  user_list = get_leaderboard(user_list)
+
+  if user_list.count > CHUNK_SIZES
+    lists = user_list.each_slice(CHUNK_SIZES).to_a
+    threads = []
+    (0..lists.length-1).each do |i|
+      l = lists[i]
+      threads << Thread.new(i, l, user_list) do
+        STDERR.puts "New thread#{i} started with #{l.length} users to check"
+        Thread.current[:output] = []
+        l.each_with_index do |u, index|
+          user = nil
+          while user == nil
+            user = get_user(u["id"], nil)[0] if !u["entrant"]
+          end
           songs = user["topScores"]
           sum = songs.sum { |song| song["totalPasses"].to_i }
-          Thread.current[:output] << { name: user["entrant"]["name"], passes: sum }
+          Thread.current[:output] << { name: user["entrant"]["name"], passes: sum, rank: user_list.index { |u1| u1[:id] == user["entrant"]["id"] } }
           if (index + 1) % 10 == 0
             STDERR.puts "thread#{i} finished checking #{index + 1}/#{CHUNK_SIZES} users"
           end
@@ -283,9 +342,10 @@ def passes(user_list)
   end
 
   length = list.map { |u| u[:name].length }.max
-  list.sort_by { |u| -u[:passes] }.each do |u|
-    puts "#{u[:name].to_s.rjust(length, " ")} - passes: #{u[:passes].to_s.rjust(3, " ")}"
-  end
+  puts list
+  # list.sort_by { |u| -u[:passes] }.each do |u|
+  #   puts "#{u[:name].to_s.rjust(length, " ")} - passes: #{u[:passes].to_s.rjust(3, " ")}"
+  # end
 end
 
 def average_by_region(users_list)
@@ -295,7 +355,11 @@ def average_by_region(users_list)
 
   scores_length = 0
   median_length = 0
-  regions.each do |region|
+  regions_flags = regions.map { |r| [r, REGION_FLAGS[r[:region].to_sym]]}
+  regions_flags = regions_flags.group_by { |r| r[1] }
+    .map { |k, v| { region: v.first[0][:region], users: v.map { |region| region[0][:users] }.flatten } }
+
+    regions_flags.each do |region|
     scores = get_leaderboard(region[:users]).map { |user| user["rankingPoints"].to_i }.sort
     scores_avg = scores.sum / region[:users].count.to_f
 
@@ -306,7 +370,7 @@ def average_by_region(users_list)
     median_length = [median_length, region[:median].to_s.length].max
   end
 
-  regions.sort_by { |r| [-r[:scores], r[:region]] }.each do |region|
+  regions_flags.sort_by { |r| [-r[:scores], r[:region]] }.each do |region|
     puts "#{region[:region].rjust(region_length, " ")} - #{region[:scores].to_s.rjust(scores_length, " ")} Avg | #{region[:median].to_s.rjust(median_length, " ")} Median"
   end
 end
@@ -384,6 +448,40 @@ def rivals(user_list, kind)
     next if kind_type == "points" && song[:max_points] == 1
 
     puts "#{song[kind].to_s.rjust(6, " ")} | [#{song[:meter].to_s.rjust(2, "0")}] | #{song[:name][0..19]}"
+  end
+end
+
+def songs_passes_user(user_list)
+  user = user_list.first
+
+  user_songs = user["topScores"]
+  songs = user["charts"]
+
+  songs_info = []
+  user_songs.each do |song|
+    s = songs.find { |s_info| s_info["hash"] == song["chartHash"] }
+    if s
+      songs_info << { 
+        title: s["titleRomaji"].length > 0 ? s["titleRomaji"] : s["title"],
+        meter: s["meter"],
+        passes: song["totalPasses"],
+        stepartist: s["stepartist"],
+        type: s["playstyle"].to_i == 1 ? "" : "(double) "
+      }
+    end
+  end
+
+  songs_info.compact!
+
+  puts "Passes of each song for #{user["entrant"]["name"]}"
+  i = 0
+  current_passes = 9999
+  songs_info.sort_by { |song| [-song[:passes], -song[:meter], song[:title]] }.each_with_index do |song, index|
+    if current_passes > song[:passes]
+      i = index + 1
+      current_passes = song[:passes]
+    end
+    puts "#{(i).to_s.rjust(3, " ")}. #{song[:passes].to_s.rjust(2, ' ')} pass#{song[:passes] > 1 ? "es" : "  "} on #{"[#{song[:meter]}]".rjust(4, ' ')} #{song[:title]} #{song[:type]}by #{song[:stepartist]}"
   end
 end
 
